@@ -1,0 +1,91 @@
+.Footer {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1260px;
+    height: 1675px;
+    z-index: 13;
+}
+.Social_Media {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1260px;
+    height: 1675px;
+    z-index: 12;
+}
+.Google_ {
+    background-color: rgb(102, 102, 102);
+    position: absolute;
+    left: 224px;
+    top: 1637px;
+    width: 19px;
+    height: 18px;
+    z-index: 11;
+}
+.RSS {
+    background-color: rgb(102, 102, 102);
+    position: absolute;
+    left: 296px;
+    top: 1637px;
+    width: 19px;
+    height: 19px;
+    z-index: 10;
+}
+.Pinterest {
+    background-color: rgb(102, 102, 102);
+    position: absolute;
+    left: 261px;
+    top: 1637px;
+    width: 15px;
+    height: 18px;
+    z-index: 9;
+}
+.Facebook {
+    background-color: rgb(102, 102, 102);
+    position: absolute;
+    left: 192px;
+    top: 1637px;
+    width: 10px;
+    height: 18px;
+    z-index: 8;
+}
+.Twitter {
+    background-color: rgb(102, 102, 102);
+    position: absolute;
+    left: 149px;
+    top: 1637px;
+    width: 24px;
+    height: 19px;
+    z-index: 7;
+}
+.©_2014_WebDesign_Studio__All_rights_reserved__D {
+    font-size: 12px;
+    font-family: "OpenSans";
+    color: rgb(102, 102, 102);
+    line-height: 1.5;
+    text-align: right;
+    position: absolute;
+    left: 851.937px;
+    top: 1649.992px;
+    z-index: 5;
+}
+.Background {
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    left: 0px;
+    top: 1615px;
+    width: 1260px;
+    height: 60px;
+    z-index: 4;
+}
+.Logo {
+    background-image: url("Logo.png");
+    opacity: 0.702;
+    position: absolute;
+    left: 199px;
+    top: 1449px;
+    width: 129px;
+    height: 70px;
+    z-index: 17;
+}
