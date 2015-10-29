@@ -1,0 +1,122 @@
+div.calendar{
+    width:300px;
+    height: 280px;
+    background-color: #fc6f53;
+    border-radius: 5px;
+    font-family: 'Open sans' , sans-serif;
+}
+
+    div.calendar .header{
+        width: 100%;
+        height: 100px;
+    }
+
+    div.calendar .header button{
+        border:none;
+        background-color: transparent;
+        height: 100px;
+        width: 54px;
+        color: #fff;
+        font-size: 40px;
+        display: block;
+        float: left;
+    }
+        div.calendar .header .date-number{
+            display: block;
+            width: 58px;
+            height: 100px;
+            float: left;
+            box-sizing:border-box;
+            font-weight: 300;
+            font-size: 50px;
+            padding-top: 15px;
+            color:#b44331;
+        }
+        div.calendar .header .date-text{
+            display: block;
+            width: 134px;
+            height: 100px;
+            float: left;
+            box-sizing:border-box;
+            font-size: 10px;
+            padding-top: 29px;
+            padding-left:5px; 
+        }
+
+        div.calendar .header .date-day{
+            color: #fff;
+            display: block;
+        }
+        div.calendar .header .date-month-year{
+            color: #fecdc6;
+            display: block;
+        }
+
+        div.calendar .dates{
+            width: 85%;
+            margin: 0px auto;
+            text-align: center;
+            line-height: 28px;
+            height: 180px;         
+        }
+
+            div.calendar .dates ul.weekdays{
+                width: 100%;
+                list-style: none;
+                padding: 0px;
+                margin:0px;
+                color: #b44331;
+                /*display: block;*/
+            }
+                div.calendar .dates ul.weekdays li{
+                    float: left;
+                    display: block;
+                    width: calc(100% / 7);
+
+                }
+            div.calendar .dates ul.month-days{
+                display: block;
+                height: 100%;
+                padding: 0px;
+                margin:0px;
+            }
+            div.calendar .dates .month-days li{
+                display: block;
+                float: left;
+                color: #fff;
+                width: calc(100% / 7);
+            }
+
+/*css for submit*/
+.submit{
+    border:none;
+    background-color:green;
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+    padding: 5px 15px;
+}
+    .submit span.text{
+        color: white;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: lighter;
+        display: block;
+        float: left;
+    }
+    .submit span.icon{
+        color: white;
+        font-size: 16px;
+        float: right;
+    }
+
+button.btn-delete{
+    background-color: #ed5564;
+    color: #fff;
+    border-radius: 2px;
+    border: none;
+    padding: 5px 10px;
+    font-size: 12px;
+    text-transform: uppercase;;
+    font-family: "Open Sans",sans-serif;
+}
