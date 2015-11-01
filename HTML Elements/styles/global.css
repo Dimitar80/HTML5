@@ -1,0 +1,96 @@
+body{
+
+}
+/*CSS for first element*/
+nav.header1{
+    width:100%;
+    height: 70px;
+    background-color: #e6e9ee;
+    text-align: center;
+}
+    nav.header1 a.logo{
+        margin-right: 40px;
+    }
+    nav.header1 a.menu{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #656d78;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        display: inline-block;
+        width: 6%;
+        position: relative;
+        top: -30px;
+    }
+    nav.header1 a.menu:hover{
+        color: #9fd566;
+    }
+    nav.header1 span.copyrights{
+        font-size: 12px;
+        font-family: 'Open Sans', sans-serif;
+        color: #adb1ba;
+        width: 280px;
+        display: inline-block;
+        position: relative;
+        top: -30px;
+        margin-left: 40px;
+    }
+/*CSS for second element*/
+div.footer{
+    width: 100%;
+    height: 280px;
+    background-color: #434a54;
+    text-align: center;
+}
+    div.footer div.top{
+        width: 100%;
+        height: 62px;
+    }
+    nav.top a.logo2{
+        margin-right: 40px;
+    }
+    nav.top a.menu2{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        display: inline-block;
+        width: 12%;
+        position: relative;
+        top: -30px;
+    }
+
+    div.links{
+        width: 100%;
+        height: 136px;
+        text-align: center;
+        margin-left: 34%;
+
+     }
+    div.links ul{
+        float: left;
+        text-align: left;
+        list-style: none;
+        color: #949ba5;
+        font-size: 12px;
+        width: 130px;
+        margin-top:0px;
+        position: relative;
+        font-family: 'Open Sans', sans-serif;
+
+    }
+        div.links ul li{
+            line-height: 2;
+        }
+
+    div.footer span.copyrights{
+        height: 82px;
+        display: block;
+        font-size: 12px;
+        font-family: 'Open Sans', sans-serif;
+        color: #adb1ba;
+        margin-top:20px;
+    }
