@@ -1,6 +1,6 @@
 body{
-
-}
+    background-color: #f1f2f6;
+     }
 /*CSS for first element*/
 nav.header1{
     width:100%;
@@ -8,89 +8,202 @@ nav.header1{
     background-color: #e6e9ee;
     text-align: center;
 }
-    nav.header1 a.logo{
-        margin-right: 40px;
-    }
-    nav.header1 a.menu{
-        text-decoration: none;
-        text-transform: uppercase;
-        color: #656d78;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 12px;
-        font-weight: 700;
-        display: inline-block;
-        width: 6%;
-        position: relative;
-        top: -30px;
-    }
-    nav.header1 a.menu:hover{
-        color: #9fd566;
-    }
-    nav.header1 span.copyrights{
-        font-size: 12px;
-        font-family: 'Open Sans', sans-serif;
-        color: #adb1ba;
-        width: 280px;
-        display: inline-block;
-        position: relative;
-        top: -30px;
-        margin-left: 40px;
-    }
+nav.header1 a.logo{
+    margin-right: 40px;
+}
+nav.header1 a.menu{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #656d78;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    display: inline-block;
+    width: 6%;
+    position: relative;
+    top: -30px;
+}
+nav.header1 a.menu:hover{
+    color: #9fd566;
+}
+nav.header1 span.copyrights{
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    color: #adb1ba;
+    width: 280px;
+    display: inline-block;
+    position: relative;
+    top: -30px;
+    margin-left: 40px;
+}
 /*CSS for second element*/
 div.footer{
-    width: 100%;
-    height: 280px;
-    background-color: #434a54;
-    text-align: center;
+width: 100%;
+height: 280px;
+background-color: #434a54;
+text-align: center;
 }
-    div.footer div.top{
-        width: 100%;
-        height: 62px;
+    div.footer nav.top{
+    width: 100%;
+    height: 62px;
     }
     nav.top a.logo2{
         margin-right: 40px;
-    }
+        }
+
     nav.top a.menu2{
-        text-decoration: none;
-        text-transform: uppercase;
-        color: #fff;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 12px;
-        font-weight: 700;
-        display: inline-block;
-        width: 12%;
-        position: relative;
-        top: -30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    display: inline-block;
+    width: 12%;
+    position: relative;
+    top: -30px;
+    }
+    nav.top a.menu2:hover{
+        color:#9fd566; ;
     }
 
-    div.links{
-        width: 100%;
-        height: 136px;
-        text-align: center;
-        margin-left: 34%;
-
-     }
+div.links{
+    width: 100%;
+    height: 136px;
+    text-align: center;
+    margin-left: 34%;
+    margin-right: 26%;
+    }
     div.links ul{
-        float: left;
-        text-align: left;
-        list-style: none;
-        color: #949ba5;
-        font-size: 12px;
-        width: 130px;
-        margin-top:0px;
-        position: relative;
-        font-family: 'Open Sans', sans-serif;
+    float: left;
+    text-align: left;
+    list-style: none;
+    color: #949ba5;
+    font-size: 12px;
+    width: calc(40%/4);
+    margin-top:0px;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
 
     }
         div.links ul li{
-            line-height: 2;
+        line-height: 2;
         }
 
-    div.footer span.copyrights{
-        height: 82px;
-        display: block;
-        font-size: 12px;
+div.footer span.copyrights{
+height: 82px;
+display: block;
+font-size: 12px;
+font-family: 'Open Sans', sans-serif;
+color: #adb1ba;
+margin-top:20px;
+}
+/*CSS for third element*/
+div.mojito{
+    width: 458px;
+    height: 344px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px #e3e4e8;
+}
+    div.mojito div.image{
+        width: 100%;
+        height: 218px;
+        background-image: url("../assets/images/mojito.jpg");
+    }
+
+    div.mojito div.description{
+        width: 100%;
+        height:126px ;
+        /*margin-top:20px;*/
+        /*margin-bottom:27px;*/
+    }
+    div.mojito div.description div.text{
+        width:250px ;
+        /*height: 126px;*/
+        border-right: 2px solid #eaedf2;
+        padding-left: 15px;
+        padding-right: 15px;
         font-family: 'Open Sans', sans-serif;
-        color: #adb1ba;
-        margin-top:20px;
+        display: inline-block;
+        float: left;
+    }
+        div.mojito div.description div.text h3{
+            color: #8c9099;
+            margin-bottom: 10px;
+        }
+        div.mojito div.description div.text p{
+            color: #cfd3de;
+            font-size: 12px;
+        }
+    div.mojito div.download{
+        width:178px ;
+        height: 126px;
+        display: inline;
+        float: right;
+        margin-top: -119px;
+    }
+        div.mojito div.download button{
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+            text-transform: uppercase;
+            color: #ffffff;
+            background-color: #a0d569;
+            border: none;
+            height: 40px;
+            width: 140px;
+            border-radius:5px ;
+        }
+        div.mojito div.download table{
+            font-size: 12px;
+            margin-left: 20px;
+            margin-top:15px ;
+        }
+        div.mojito div.download table tr.first{
+            color:#acb2be;
+        }
+        div.mojito div.download table tr.second{
+            color:#737a84;
+        }
+            div.mojito div.download table td{
+                width: 50px;
+            }
+
+/*CSS for element 4 */
+
+div.coffee{
+    width: 300px;
+    height: 350px;
+    border-radius: 7px;
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+    div.coffee div.image{
+        width: 100%;
+        height: 194px;
+        background-image: url('../assets/images/coffee.jpg');
+        border-radius: 7px;
+    }
+
+    div.coffee div.description{
+        width: 260px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+        div.coffee div.description h3{
+            color:#424b54;
+            margin-bottom: 10px;
+        }
+        div.coffee div.description p{
+            color:#b6bdc7;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+    div.coffee div.bottom{
+        width: 260px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 12px;
+        color:#b6bdc7;
     }
