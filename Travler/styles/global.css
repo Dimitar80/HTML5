@@ -258,24 +258,75 @@ div.team{
             height: 480px;
             width: 100%;
             padding-bottom: 20px;
+            margin-top: 80px;
         }
         div.frame div.left{
             margin-right: 15px;
         }
         div.center div.post{
-            width: 460px;
+            width: 370px;
             height: 480px;
             background-color: #fff;
             display: inline-block;
             background-image: url("../assets/images/icon.jpg");
             background-repeat: no-repeat;
+            text-align: left;
+            padding-left: 45px;
+            padding-right: 45px;
         }
+            div.center div.post h1{
+                font-size: 30px;
+                font-family: "Myriad Pro";
+                color: rgb(37, 37, 37);
+                padding-top: 70px;
+                padding-bottom: 20px;
+                margin: 0;
+                font-weight: 500;
+            }
+            div.center div.post p{
+                font-size: 14px;
+                font-family: "Myriad Pro";
+                color: rgb(96, 23, 163);
+                line-height: 1.786;
+                padding-bottom: 40px;
+            }
+            div.center div.post span{
+                font-size: 12px;
+                color: #949494;
+                font-family: Arial;
+            }
         div.center div.fullbox{
             background-color: #fff;
-            width: 935px;
+            width: 845px;
             height: 335px;
             margin:0 auto;
+            text-align: left;
+            padding-left: 45px;
+            padding-right: 45px;
+            font-weight: 400;
+
         }
+            div.center div.fullbox h1{
+                font-size: 30px;
+                font-family: "Myriad Pro";
+                color: rgb(37, 37, 37);
+                padding-top: 70px;
+                padding-bottom: 20px;
+                margin: 0;
+                font-weight: 500;
+            }
+            div.center div.fullbox p{
+                font-size: 14px;
+                font-family: "Myriad Pro";
+                color: rgb(96, 23, 163);
+                line-height: 1.786;
+                padding-bottom: 40px;
+            }
+            div.center div.fullbox span{
+                font-size: 12px;
+                color: #949494;
+                font-family: Arial;
+            }
 
 
 /*CSS FOR Footer*/
@@ -284,3 +335,79 @@ footer{
     width: 100%;
     background-color: #373737;
 }
+    footer div.center{
+        width: 950px;
+        height: 100%;
+        margin: 0 auto;
+        font-family: Arial;
+    }
+        footer div.center div.left{
+            width:475px;
+            height: 225px;
+            font-size: 12px;
+            color: #fff;
+            line-height: 1.917;
+            opacity: .7;
+            float: left;
+        }
+        footer div.center div.right{
+            width:475px;
+            height: 225px;
+            color: #fff;
+            opacity: .7;
+            float: right;
+        }
+            div.right ul.menu{
+                list-style: none;
+                width: 100%;
+                height: 80px;
+                margin-bottom: 0;
+
+            }
+                div.right ul.menu li{
+                    float: left;
+                    padding: 10px;
+                }
+                div.right ul.menu li:hover{
+                    text-decoration: underline;
+                    text-decoration-color:#501392 ;
+                    cursor: pointer;
+                    line-height: 1.5;
+                }
+            div.right ul.social{
+                list-style: none;
+                width: 100%;
+                height: 80px;
+                margin: 0;
+            }
+                div.right ul.social li{
+                    float: left;
+                    padding: 15px;
+                }
+        div.center div.bottom{
+            width: 100%;
+            height:225px ;
+            clear: both;
+
+        }
+            div.center div.bottom ul{
+                margin: 0;
+                list-style: none;
+                width: 100%;
+                height: 35px;
+                padding: 0;
+                padding-top: 40px;
+            }
+                div.center div.bottom ul li{
+                    float: left;
+                    padding-right: 20px;
+                    color: #fff;
+                    font-size: 12px;
+
+                }
+            div.center div.bottom p{
+                font-size: 11px;
+                font-family: "Myriad Pro";
+                color: rgb(126, 126, 126);
+                line-height: 1.909;
+            }
