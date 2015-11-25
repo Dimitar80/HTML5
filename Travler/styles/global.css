@@ -1,0 +1,286 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    height: 230px;
+    background-color:#ebebeb;
+}
+    header div.center{
+        width: 950px;
+        height: 100%;
+    }
+        div.center div.logo{
+            width: 300px;
+            height: 100px;
+            position: relative;
+            display: inline-block;
+        }
+            header div.center div.logo h2{
+                margin: 0;
+                display: inline-block;
+                position: absolute;
+                top:40px;
+                font-size: 40px;
+                font-family: "Myriad Pro";
+                text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
+                color: #501392;
+            }
+            header div.center div.logo span{
+                position: absolute;
+                left: 100px;
+                font-size: 12px;
+                font-family: "PTSans";
+                color: rgb(125, 125, 125);
+                font-style: italic;
+                text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
+                left: 80px;
+                top:80px;
+            }
+
+        div.center div.quicklinks{
+            height: 100px;
+            width:370px ;
+            display: inline-block;
+            float: right;
+            /*position: relative;*/
+        }
+
+            div.center div.quicklinks a{
+                text-decoration: none;
+                font-size: 12px;
+                color: #d5d5d5;
+                font-weight: bold;
+                display: inline-block;
+                padding: 0 10px 0 10px;
+            }
+                div.center div.quicklinks a:hover{
+                    color: #501392;
+                }
+            div.center div.quicklinks span{
+                display: inline-block;
+                padding: 0 10px 0 10px;
+            }
+            div.center div.quicklinks i{
+                color:#d5d5d5;
+            }
+
+            div.center div.input{
+                display: inline-block;
+                float:right;
+                width: 280px;
+                height:35px;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 15px;
+                background-color: #fff;
+                /*position: absolute;*/
+
+            }
+                div.center  div.input input{
+                    border: none;
+                    float: left;
+                    outline: none;
+                }
+                div.center  div.input i{
+                    float: right;
+                    font-size: 24px;
+                    color: #501392;
+                }
+.slider{
+    width: 100%;
+    height: 540px;
+    background-image: url("../assets/images/slider.jpg");
+    position: relative;
+}
+    div.slider div.center{
+        position: absolute;
+        width: 530px;
+        height: 170px;
+        left: calc(50% - 265px );
+        top: calc(50% - 85px);
+        text-align: center;
+        padding: 10px;
+
+    }
+        div.slider div.center h1{
+            margin:0;
+            padding-bottom: 15px;
+            font-size: 40px;
+            font-family:"Myriad Pro";
+            color: #fff;
+            font-weight: bold;
+            line-height: 1.175;
+        }
+        div.slider div.center span{
+            font-size: 20px;
+            font-family:"Myriad Pro";
+            color: #fff;
+            line-height: 1.5;
+
+        }
+/*CSS FOR MAP SECTION*/
+div.map{
+    width: 100%;
+    height: 770px;
+    background-color: #2d2d2d;
+}
+    div.map div.center{
+        width: 1100px;
+        height: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+        div.map div.center h1 {
+            margin: 0px;
+            font-size: 36px;
+            font-family: "Myriad Pro";
+            color: #fff;
+            font-weight: normal;
+            padding-top: 45px;
+        }
+        div.map div.center p{
+            font-size: 14px;
+            font-family: "Myriad Pro";
+            color: rgb(161, 97, 219);
+        }
+        div.map div.center div.columns{
+            width: 100%;
+            height: 300px;
+            text-align: left;
+        }
+
+            div.map div.center div.columns div{
+                width: calc(1010px / 3);
+                float:left;
+                padding: 15px;
+            }
+
+                div.map div.center div.columns div h4 {
+                    margin: 0;
+                    font-size: 24px;
+                    font-family: "Myriad Pro";
+                    line-height: 0.917;
+                    color: #fff;
+                    font-weight: normal;
+                }
+                div.map div.center div.columns div p{
+
+                    font-size: 12px;
+                    font-family: "Arial";
+                    color: rgb(255, 255, 255);
+                    line-height: 1.833;
+
+
+                }
+
+div.screen{
+    height: 530px;
+    width: 100%;
+    background-color: #222222;
+    position: relative;
+}
+    div.screen img {
+        margin-top: 61px;
+        position: absolute;
+        left: calc(50% - 631px);
+    }
+/*CSS FOR TEAM SECTION*/
+div.team{
+    width: 100%;
+    height: 1445px;
+    background-color: #ebebeb;
+    border-bottom: 29px solid #914DCF ;
+    position: relative;
+}
+    div.team div.center{
+        width: 980px;
+        height: 100%;
+        position: absolute;
+        left: calc(50% - 465px);
+        text-align: center;
+    }
+        div.team div.center h2{
+            display: inline-block;
+            margin: 0;
+            padding-top: 80px;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-bottom: 15px;
+            font-size: 36px;
+            font-family: "Myriad Pro";
+            font-weight: normal;
+            color: rgb(113, 113, 113);
+            text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
+        }
+        div.team div.center hr{
+            display: inline-block;
+            width:220px;
+            height: 2px
+            box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, .4);
+            color: #DEDEDE;
+        }
+        div.team div.center p{
+            margin: 0;
+            font-size: 14px;
+            font-family: "Myriad Pro";
+            color: rgb(113, 113, 113);
+            text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
+        }
+
+    div.center div.photos{
+        height: 300px;
+        width: 100%;
+        margin-top: 45px;
+    }
+        div.center div.photos div{
+            width: calc (100%/ 4);
+            display: inline-block;
+            text-align: left;
+        }
+
+            div.center div.photos div p{
+                margin-top: 15px;
+                font-size: 18px;
+                font-family: "Myriad Pro";
+                font-weight: bold;
+                text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
+                color: rgb(123, 123, 123);
+            }
+            div.center div.photos div span{
+                font-size: 14px;
+                font-family: "Myriad Pro";
+                color: rgb(123, 123, 123);
+                text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
+            }
+        div.frame{
+            height: 480px;
+            width: 100%;
+            padding-bottom: 20px;
+        }
+        div.frame div.left{
+            margin-right: 15px;
+        }
+        div.center div.post{
+            width: 460px;
+            height: 480px;
+            background-color: #fff;
+            display: inline-block;
+            background-image: url("../assets/images/icon.jpg");
+            background-repeat: no-repeat;
+        }
+        div.center div.fullbox{
+            background-color: #fff;
+            width: 935px;
+            height: 335px;
+            margin:0 auto;
+        }
+
+
+/*CSS FOR Footer*/
+footer{
+    height: 550px;
+    width: 100%;
+    background-color: #373737;
+}
