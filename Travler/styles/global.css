@@ -10,12 +10,14 @@ header{
     header div.center{
         width: 950px;
         height: 100%;
+        margin:0 auto;
     }
         div.center div.logo{
             width: 300px;
             height: 100px;
             position: relative;
             display: inline-block;
+            float: left;
         }
             header div.center div.logo h2{
                 margin: 0;
@@ -54,6 +56,7 @@ header{
                 font-weight: bold;
                 display: inline-block;
                 padding: 0 10px 0 10px;
+                height: 100px;
             }
                 div.center div.quicklinks a:hover{
                     color: #501392;
@@ -88,10 +91,41 @@ header{
                     font-size: 24px;
                     color: #501392;
                 }
+
+
+        header div.center ul.menu{
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            height: 100px;
+        }
+            header div.center ul.menu li{
+            width: calc(100% / 6);
+            float: left;
+            font-family: 'Lato', sans-serif;
+            color: #fff;
+            text-align: center;
+            box-sizing: border-box;
+            padding: 20px 0 0 0;
+            cursor: pointer;
+            height: 100px;
+            background-color: rgba(0, 0, 0, .5);
+            }
+            header div.center ul.menu li i{
+                display: block;
+                font-size: 30px;
+                margin: 0 0 10px 0;
+            }
+
+
+
+
 .slider{
     width: 100%;
     height: 540px;
     background-image: url("../assets/images/slider.jpg");
+    background-size: cover;
     position: relative;
 }
     div.slider div.center{

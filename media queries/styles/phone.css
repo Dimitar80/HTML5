@@ -1,0 +1,14 @@
+body{
+	/*background-color: blue;*/
+}
+/*section.main-section{
+
+		height: 200%;
+
+	}*/
+
+		section.main-section >div{
+			float: none;
+			width: 90%;	
+			height: 40%;
+		}
