@@ -1,0 +1,25 @@
+div.fullwidth-photo{
+    height: 650px;
+}
+/************************************/
+div.package{
+    height: 1000px;
+}
+
+div.package div.center div.photos div{
+    display: block;
+    margin-bottom: 25px;
+}
+#image1, #image2{
+    display: none;
+}
+
+/**************************************/
+
+div.rooms{
+    height:2000px;
+}
+    div.rooms div.center div{
+        display: block;
+        float: none;
+    }
