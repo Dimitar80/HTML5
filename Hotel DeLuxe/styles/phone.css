@@ -2,10 +2,10 @@ div.fullwidth-photo{
     height: 650px;
 }
 /************************************/
-div.package{
-    height: 1000px;
+/*div.package{
+    min-height: 1000px;
 }
-
+*/
 div.package div.center div.photos div{
     display: block;
     margin-bottom: 25px;
