@@ -1,0 +1,17 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: url("../images/background.jpg")center bottom fixed no-repeat;
+    background-size: cover;
+}
+.trapezoid {
+    height:100vh;
+    width:50vw;
+    float:right;
+    background:rgba(0,0,0,.6);
+    -webkit-shape-outside: polygon(40% 0, 100% 0, 100% 100%, 0% 100%);
+    shape-outside: polygon(40% 0, 100% 0, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(40% 0, 100% 0, 100% 100%, 0% 100%);
+    -webkit-shape-margin: 20px;
+}
+
