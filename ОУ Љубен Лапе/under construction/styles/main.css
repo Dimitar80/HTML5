@@ -3,7 +3,18 @@ body{
     margin: 0;
     background: url("../images/background.jpg")center bottom fixed no-repeat;
     background-size: cover;
+    font-family: 'Noto Sans', sans-serif;
+    overflow: hidden;
 }
+
+.header{
+    color: #000;
+    font-size: 45px;
+    position: absolute;
+        top: 10%;
+        left: 5%;
+}
+
 .trapezoid {
     height:100vh;
     width:50vw;
@@ -15,3 +26,91 @@ body{
     -webkit-shape-margin: 20px;
 }
 
+div.content{
+    margin-top:40px;
+}
+
+.logo{
+    margin-top:100px;
+    margin-right: 6%;
+    width: 60%;
+    float:right;
+}
+.logo img{
+    width: 100%;
+}
+.icon{
+    width: 70%;
+    float: right;
+    color: #fff;
+    margin-right: 6%;
+    font-size: 16px;
+    line-height: 20px;
+    display: block;
+    padding-left: 30px;
+
+}
+.icon i{
+    display: inline-block;
+    font-size: 40px;
+    color: rgba(255,255,255,.3);
+/*    width: 40%;*/
+    clear:left;
+    float: left;
+    width: 20%;
+     padding-top: 65px;
+
+}
+.icon span{
+    /*display: block;*/
+    float: right;
+    width: 80%;
+    padding-top: 65px;
+}
+
+.icon i.fa-pencil {
+    font-size: 50px;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+@media screen and (max-height: 1000px){
+    .header{
+        font-size: 35px;
+    }
+}
+@media screen and (max-height: 776px){
+    .header{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-height: 789px) {
+    .icon {
+        font-size:14px;
+    }
+
+    .icon i,.icon span{
+        padding-top: 45px;
+    }
+}
+
+@media screen and (max-height: 720px) {
+    .icon {
+        font-size:14px;
+    }
+
+    .icon i,.icon span{
+        padding-top: 25px;
+    }
+
+}
+
+@media screen and (max-height: 605px){
+    .logo{
+        margin-top:50px;
+    }
+    .icon i,.icon span{
+        padding-top: 15px;
+    }
+}
