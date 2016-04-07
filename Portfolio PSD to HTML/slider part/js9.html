@@ -2,33 +2,34 @@
 <head>
     <title></title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/styles/animate.css">
     <link rel="stylesheet" href="js9.css">
 </head>
 <body>
 
 <div class="wrap">
     <ul>
-        <li class="quote1">
-            <span class="quote">Design is thinking made visual</span>
-            <span class="author">Author ~ Saul Bass ~</span>
+        <li class="quote1 animated flipInX">
+            <span class="quote" id="q1">Design is thinking made visual</span>
+            <span class="author" id="a1">Author ~ Saul Bass ~</span>
             <div class="circles">
                 <i class="fa fa-circle first"></i>
                 <i class="fa fa-circle second"></i>
                 <i class="fa fa-circle third"></i>
             </div>
         </li>
-        <li class="quote2">
-            <span class="quote">First solve the problem. Than write the code</span>
-            <span class="author">Author ~ John Johnson ~</span>
+        <li class="quote2 animated flipInX">
+            <span class="quote" id="q2">First solve the problem. Than write the code</span>
+            <span class="author" id="a2">Author ~ John Johnson ~</span>
             <div class="circles">
                 <i class="fa fa-circle first"></i>
                 <i class="fa fa-circle second"></i>
                 <i class="fa fa-circle third"></i>
             </div>
         </li>
-        <li class="quote3">
-            <span class="quote">Websites promote you 24/7: No employee will do that</span>
-            <span class="author">Author ~ Paul Cookson ~</span>
+        <li class="quote3 animated flipInX ">
+            <span class="quote" id="q3">Websites promote you 24/7: No employee will do that</span>
+            <span class="author" id="a3">Author ~ Paul Cookson ~</span>
             <div class="circles">
                 <i class="fa fa-circle first"></i>
                 <i class="fa fa-circle second"></i>
@@ -37,7 +38,24 @@
         </li>
     </ul>
 </div>
-
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="js9.js"></script>
+
+<script>
+    $( document ).ready(function(){
+
+      $('.quote1').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',$('#q1').addClass('animated zoomIn'));
+        $('.quote2').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',$('#q2').addClass('animated zoomIn'));
+        $('.quote3').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',$('#q3').addClass('animated zoomIn'));
+
+        $('#q1').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',$('#a1').addClass('animated zoomIn'));
+        $('#q2').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',$('#a2').addClass('animated zoomIn'));
+        $('#q3').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',$('#a3').addClass('animated zoomIn'));
+        });
+
+
+</script>
+
 </body>
 </html>
