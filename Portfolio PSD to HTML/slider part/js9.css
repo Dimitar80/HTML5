@@ -1,0 +1,73 @@
+
+.wrap {
+width: 100%;
+height: 38.89vh;
+overflow: hidden;
+}
+
+.wrap ul {
+padding: 0;
+margin: 0;
+list-style: none;
+height: 38.89vh;
+width:300%;
+transition: all 1s ease-in-out;
+}
+
+.wrap ul li {
+width: 33.33%;
+height: 38.89vh;
+float: left;
+}
+.wrap ul li span{
+    display: block;
+}
+.wrap ul li span.quote{
+    font-size: 3.13vw;
+    font-family: "Open Sans";
+    color: #fff;
+    font-style: italic;
+    line-height: 1.2;
+    text-align: center;
+    padding-top: 11.76vh;
+    box-sizing: border-box;
+}
+.wrap ul li span.author{
+    font-size: 1.25vw;
+    font-family: "Open Sans";
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 3;
+    text-align: center;
+}
+.wrap ul li span{
+    display: block;
+}
+.wrap ul li div.circles{
+    height: 3.65vw;
+    width:8.33vw;
+    margin: auto;
+    box-sizing: border-box;
+    /*padding: 1.3vw;*/
+    text-align: center;
+}
+    .wrap ul li div.circles i{
+        padding: 0.26vw;
+        color: #baa695;
+        cursor: pointer;
+    }
+li.quote1 {
+    background: url("images/quote1.png") no-repeat center center ;
+    background-size: cover;
+}
+
+li.quote2 {
+    background: url("images/quote2.png") no-repeat center center;
+    background-size: cover;
+}
+
+li.quote3 {
+    background: url("images/quote3.png") no-repeat center center;
+    background-size: cover;
+}
+
