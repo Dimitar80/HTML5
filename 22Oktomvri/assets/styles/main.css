@@ -1,3 +1,6 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
 .center{
     width: 70%;
     margin: 0 auto;
@@ -15,14 +18,19 @@ header{
 /*header-top*/
 .top-header{
     width: 100%;
-    min-height: 45px;
+    min-height: 4.63vh;
     box-sizing: border-box;
     background-color: #a31717;
-    padding: 15px 0;
+    padding: 1.39vh 0;
+    font-size: 0.94vw;
 }
-    .quick-info{
-        float: right;
-    }
+.quick-info{
+    float: right;
+    color: #ffffff;
+}
+.quick-info span{
+    margin-right: 10px;
+}
 /*header-bottom*/
 .bottom-header{
     background-image: -moz-linear-gradient( 90deg, rgb(215,215,215) 0%, rgb(255,255,255) 100%);
@@ -30,34 +38,157 @@ header{
     background-image: -ms-linear-gradient( 90deg, rgb(215,215,215) 0%, rgb(255,255,255) 100%);
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.16);
     width:100%;
+    height: 17.41vh;
 }
-    .logo{
-        display: inline-block;
-    }
-    .logo img{
-        width: 342px;
-        height: 187px;
-    }
-    nav{
-        float: right;
-    }
+.logo{
+    display: inline-block;
+}
+.logo img {
+    height: 17.5vh;
+}
+nav{
+    float: right;
+}
+/*********************MENU**************************************/
+div.bottom-header .center{
+    position: relative;
+}
+nav.menu{
+    position: absolute;
+    bottom: 2px;
+    right: 0;
+}
+nav.menu a{
+    /*display: inline-block;*/
+    float: left;
+    padding: 0 1.58vw;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2.21vh;
+    color:#7d7d7d;
+    line-height: 2.412;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
+    border-bottom: 5px solid transparent;
+    border-right: 1px solid #D4D4D4;
+}
+
+nav.menu a:last-child{
+    border-right: none;
+}
+nav.menu a:hover{
+    background-color: white;
+    border-bottom: 0.46vh solid #bb1d1d;
+    /*border-box:box-sizing;*/
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.16);
+    color:#bb1d1d ;
+}
+nav.menu a span{
+    display: block;
+    font-size: 2.59vh;
+
+}
+
 
 /**FULL WIDTH PHOTO**/
 .full-width-photo{
     width: 100%;
-    height: 604px;
-    background-image: url("../images/bg.png");
+    height: 77.78vh;
+    background: url("../images/bg.png") no-repeat;
+    background-size: cover;
     position: relative;
 }
+.full-width-photo .center .naslov{
+    text-align: center;
+    padding-top: 12.04vh;
+}
+.full-width-photo .center .naslov h1{
 
-    div.subscription{
-        width: 100%;
-        background-color: rgb(3, 3, 3);
-        opacity: 0.561;
-        position: absolute;
-        bottom: 0;
-        padding-top: 58px;
-        padding-bottom: 30px;
+    font-size: 48px;
+    color: rgb(187, 29, 29);
+    line-height: 0.75;
+    font-weight: 900;
+
+}
+.full-width-photo .center .naslov p{
+    font-size: 24px;
+    line-height: 0.75;
+    margin-top: 20px;
+}
+.full-width-photo .center .naslov img{
+    width: 4.78vw;
+    margin-top: 6.48vh;
+}
+
+
+div.subscription{
+    width: 100%;
+    height: 18.7vh;
+    background-color: rgb(3, 3, 3);
+    opacity: 0.561;
+    position: absolute;
+    bottom: 0;
+    padding-top: 4.63vh;
+    box-sizing: border-box;
+}
+div.subscription div.center{
+    text-align: center;
+}
+
+div.subscription div.center p{
+    color: #ffffff;
+    font-size:1.04vw;
+    line-height: 3.55;
+}
+div.subscription div.center form{
+    position: relative;
+    left:15.44vw;
+}
+div.input{
+    text-align: center;
+    height: 5.09vh;
+    width: 31.25vw;
+    display: inline-block;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size:18px;
+}
+.input input {
+    width: 26.51vw;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    color: white;
+    padding-top: 1.5vh;
+    padding-left: 1.47vw;
+}
+
+button.submit{
+    height: 5.09vh;
+    width: 5.89vw;
+}
+button.submit .fa {
+    font-size: 3.13vh;
+}
+/***ZA NAS SECTION **/
+section.zanas{
+    width: 100%;
+    background-color: #ebebeb;
+    text-align: center;
+}
+    .zanas .center h1{
+        width: 10%;
+        font-size: 1.88vw;
+        font-weight: bold;
+        color: #aaaaaa;
+        line-height: 0.571;
+        text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
+        border-bottom:5px solid darkred ;
+        letter-spacing: 2px;
+        margin: 0 auto 6.94vh auto;
+        padding: 9.26vh 0 2.31vh 0;
+        /*box-shadow:0px 5px 1px 0px rgba(0, 0, 0, 0.16);*/
     }
 
 /***ZA NAS SECTION **/
@@ -70,31 +201,45 @@ section.zanas{
 /***RED SECTION ICONS***/
 div.red-icons{
     width: 100%;
-    height: auto;
+    height: 28vh;
     background: url("../images/bg-red-icons.png") no-repeat center;
     background-size: cover;
     text-align: center;
 }
-    div.red-icons div.center div{
-        width: 33%;
-        display: inline-block;
-    }
-        div.red-icons div.center div span{
-            display: block;
-        }
+div.red-icons div.center div{
+    width: 33%;
+    height: 28vh;
+    float: left;
+    padding-top: 4.26vh;
+    box-sizing: border-box;
+    text-align: center;
+}
+div.red-icons div.center div img{
+    width:6.25vw;
+}
+div.red-icons div.center div span{
+    display: block;
+    width: 13.53vw;
+    font-size: 1.25vw;
+    color: rgb(255, 255, 255);
+    font-variant: small-caps;
+    line-height: 1.5;
+    text-align: center;
+    margin: 2.78vh auto;
+   letter-spacing: 0.1vw;
+}
 /***USLUGI SECTION **/
 section.uslugi{
     width: 100%;
     background-color: #ebebeb;
     text-align: center;
 }
-    div.uslugi-sliki div{
-        display: inline-block;
-        width: 33%;
-    }
+div.uslugi-sliki div{
+    display: inline-block;
+    width: 33%;
+}
 
-
-/**********???????********/
+/**********Proekti********/
 section.proekti{
     background-image:url("../images/bg-proekti.png");
 }
