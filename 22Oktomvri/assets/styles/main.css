@@ -4,7 +4,8 @@ body{
 .center{
     width: 70%;
     margin: 0 auto;
-    height: auto;
+    height: inherit;
+    position: relative;
 }
 .clear{
     /*clear: both;*/
@@ -24,13 +25,19 @@ header{
     padding: 1.39vh 0;
     font-size: 0.94vw;
 }
+/*quick info part*/
 .quick-info{
     float: right;
     color: #ffffff;
 }
 .quick-info span{
-    margin-right: 10px;
+    margin-right:0.52vw;
 }
+.quick-info span:last-child{
+    cursor: pointer;
+    margin-left: 2.19vw;
+}
+
 /*header-bottom*/
 .bottom-header{
     background-image: -moz-linear-gradient( 90deg, rgb(215,215,215) 0%, rgb(255,255,255) 100%);
@@ -49,13 +56,24 @@ header{
 nav{
     float: right;
 }
+/*search tool*/
+div.search-bar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15.63vw;
+    height: 4.26vh;
+    background-color: #bfbebe;
+
+
+}
 /*********************MENU**************************************/
 div.bottom-header .center{
     position: relative;
 }
 nav.menu{
     position: absolute;
-    bottom: 2px;
+    bottom: 0px;
     right: 0;
 }
 nav.menu a{
@@ -70,6 +88,7 @@ nav.menu a{
     text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
     border-bottom: 5px solid transparent;
     border-right: 1px solid #D4D4D4;
+
 }
 
 nav.menu a:last-child{
@@ -77,7 +96,7 @@ nav.menu a:last-child{
 }
 nav.menu a:hover{
     background-color: white;
-    border-bottom: 0.46vh solid #bb1d1d;
+    border-bottom: 5px solid #bb1d1d;
     /*border-box:box-sizing;*/
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.16);
     color:#bb1d1d ;
@@ -118,7 +137,7 @@ nav.menu a span{
     width: 4.78vw;
     margin-top: 6.48vh;
 }
-
+/*SUBSCRIPTION PART*/
 
 div.subscription{
     width: 100%;
@@ -170,15 +189,22 @@ button.submit{
 }
 button.submit .fa {
     font-size: 3.13vh;
+    transition: all 0.3s ease-in-out;
+}
+button.submit:hover .fa{
+    color: forestgreen;
+    transform: scale(1.5);/*zoom effect*/
 }
 /***ZA NAS SECTION **/
 section.zanas{
     width: 100%;
+    height: 77.78vh;
     background-color: #ebebeb;
     text-align: center;
+    position: relative;
 }
     .zanas .center h1{
-        width: 10%;
+        width: 8.85vw;
         font-size: 1.88vw;
         font-weight: bold;
         color: #aaaaaa;
@@ -188,15 +214,27 @@ section.zanas{
         letter-spacing: 2px;
         margin: 0 auto 6.94vh auto;
         padding: 9.26vh 0 2.31vh 0;
+        text-transform: uppercase;
         /*box-shadow:0px 5px 1px 0px rgba(0, 0, 0, 0.16);*/
     }
-
-/***ZA NAS SECTION **/
-section.zanas{
-    width: 100%;
-    background-color: #ebebeb;
-    text-align: center;
-}
+    .zanas-info{
+        width: 80%;
+        font-size: 1.25vw;
+        color: #aaaaaa;
+        line-height:1.5;
+        margin: auto;
+    }
+        .zanas-info span{
+            font-weight: bold;
+            font-style: italic;
+        }
+    .zanas .center img{
+        width: 25vw;
+        position: absolute;
+        bottom: 0;
+        left:15.5vw;
+        z-index: 1;
+    }
 
 /***RED SECTION ICONS***/
 div.red-icons{
@@ -216,7 +254,13 @@ div.red-icons div.center div{
 }
 div.red-icons div.center div img{
     width:6.25vw;
+    transition: all 0.5s ease-in-out;
+
 }
+div.red-icons div.center div img:hover{
+    transform: scale(1.5);/*zoom effect*/
+}
+
 div.red-icons div.center div span{
     display: block;
     width: 13.53vw;
@@ -234,20 +278,145 @@ section.uslugi{
     background-color: #ebebeb;
     text-align: center;
 }
+
+    .uslugi .center h1{
+        width: 8.85vw;
+        font-size: 1.88vw;
+        font-weight: bold;
+        color: #aaaaaa;
+        line-height: 0.571;
+        text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
+        border-bottom:5px solid darkred ;
+        letter-spacing: 2px;
+        margin: 0 auto 6.94vh auto;
+        padding: 9.26vh 0 2.31vh 0;
+        text-transform: uppercase;
+        /*box-shadow:0px 5px 1px 0px rgba(0, 0, 0, 0.16);*/
+    }
+        .uslugi-info{
+            width: 80%;
+            font-size: 1.25vw;
+            color: #aaaaaa;
+            line-height:1.5;
+            margin: 0 auto 13.89vh auto;
+        }
+            .uslugi-info span{
+                font-weight: bold;
+                font-style: italic;
+            }
+
 div.uslugi-sliki div{
     display: inline-block;
     width: 33%;
 }
+    div.uslugi-sliki div span{
+        font-size: 1.25vw;
+        color: #aaaaaa;
+        text-transform: uppercase;
+        line-height: 2;
+        text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004)
+    }
+
+    div.uslugi-sliki div img{
+       width:  20vw;
+        margin: 7.41vh 0;
+    }
+
 
 /**********Proekti********/
 section.proekti{
-    background-image:url("../images/bg-proekti.png");
+    background:url("../images/proekt_bg.png")no-repeat ;
+    background-size: cover;
+    min-height: 87.41vh;
 }
+.proekti .center h1{
+    width: 8.85vw;
+    font-size: 1.88vw;
+    font-weight: bold;
+    color: #aaaaaa;
+    line-height: 0.571;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
+    border-bottom:5px solid darkred ;
+    letter-spacing: 2px;
+    margin: 0 auto 6.94vh auto;
+    padding: 9.26vh 0 2.31vh 0;
+    text-transform: uppercase;
+    /*box-shadow:0px 5px 1px 0px rgba(0, 0, 0, 0.16);*/
+}
+    .proekti .center div{
+        /*/!*background-color: #5aff16;*!/only for testing*/
+        width: 50%;
+        float: left;
+    }
+        .proekti .center div.left span{
+            display: block;
+            text-align: right;
+            font-size: 1.5vw;
+            color:#ffffff;
+            font-weight: bold;
+            line-height: 0.571;
+            margin-bottom: 6.25vw;
+            margin-right: 2.4vw;
+        }
+        .proekti .center div.left span:last-child{
+            margin-bottom: 0;
+        }
+
+        .proekti .center a img{
+            width: 4.5vw;
+            display: block;
+            margin:auto;
+            padding-top: 7.4vh;
+        }
+
+        .proekti .center div.right div{
+            float: none;
+            margin-bottom: 6.25vw;
+            font-size: 1.5vw;
+            color:#ffffff;
+            font-weight: bold;
+            line-height: 0.571;
+        }
+        .proekti .center div.right div:last-child{
+             margin-bottom: 0;
+
+         }
+
+
+
+
+
+
 /******proizvodi*************/
 section.proizvodi{
     background-color: #ebebeb;
     text-align: center;
 }
+    .proizvodi .center h1{
+    width: 14.85vw;
+    font-size: 1.88vw;
+    font-weight: bold;
+    color: #aaaaaa;
+    line-height: 0.571;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
+    border-bottom:5px solid darkred ;
+    letter-spacing: 2px;
+    margin: 0 auto 6.94vh auto;
+    padding: 9.26vh 0 2.31vh 0;
+    text-transform: uppercase;
+    /*box-shadow:0px 5px 1px 0px rgba(0, 0, 0, 0.16);*/
+    }
+        .proizvodi-info{
+            width: 80%;
+            font-size: 1.25vw;
+            color: #aaaaaa;
+            line-height:1.5;
+            margin: auto;
+        }
+        .proizvodi-info span{
+            font-weight: bold;
+            font-style: italic;
+        }
 
 
 /***************kontakt*************/
