@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta lang="mk">
     <title>22 Октомври</title>
-
+    <!--bootstrap-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <!--CSS STYLES-->
     <link rel="stylesheet" href="assets/styles/reset.css">
     <link href="assets/styles/nanogallery.min.css" rel="stylesheet" type="text/css">
@@ -19,6 +22,25 @@
 </head>
 
 <body>
+<!-- Modal za proekti-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!--SECTION HEADER STARTS HERE-->
 <header>
     <div class="top-header">
@@ -146,6 +168,7 @@
 <section class="proekti" id="proekti">
 
     <div class="center">
+
         <h1>Проекти</h1>
 
         <div class="left">
@@ -164,7 +187,7 @@
             <div class="progressbar" id="progressbar4">4</div>
         </div>
 
-        <a href="#"><img src="assets/images/read-more.png" alt=""></a>
+        <img src="assets/images/read-more.png" alt="" data-toggle="modal" data-target="#myModal">
 
 
     </div>
@@ -181,35 +204,35 @@
             така што почнавме со сопствен увоз и трговија на големо и мало на електро материјали,
             железарија, водовод, санитарија, кабли, сите видови на светлечки тела, рачни и електрични алати и др.
         </div>
-        <!--<div id="nanoGallery3">-->
-            <!--<a href="assets/images/instalacii3.png" data-ngthumb="assets/images/instalacii3.png" data-ngdesc="Description1">Title Image1</a>-->
-            <!--<a href="assets/images/instalacii2.png" data-ngthumb="img_02ts.jpg" data-ngdesc="Image 2 description">Title Image2</a>-->
-            <!--<a href="assets/images/instalacii1.png" data-ngthumb="img_03t.jpg">Title Image3</a>-->
-        <!--</div>-->
+        <div id="nanoGallery3">
+            <a href="assets/images/instalacii3.png" data-ngthumb="assets/images/instalacii3.png" data-ngdesc="Description1">Title Image1</a>
+            <a href="assets/images/instalacii2.png" data-ngthumb="img_02ts.jpg" data-ngdesc="Image 2 description">Title Image2</a>
+            <a href="assets/images/instalacii1.png" data-ngthumb="img_03t.jpg">Title Image3</a>
+        </div>
     </div>
 </section>
 <!--SECTION proizvodi ENDS HERE-->
 
 <!--SECTION kontakt STARTS HERE-->
 <section id="kontakt" class="kontakt">
+    <div id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2982.3195384643905!2d22.453276014973298!3d41.627224089056256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1355fb685a70379d%3A0x2a319d7b365a3186!2s22+Oktomvri+DOO!5e0!3m2!1sen!2smk!4v1460296525045" width="100%" height="768" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
     <div class="kontakt-info">
         <div class="center">
             <div class="informacii">
-                <p><span><i class="fa fa-map-marker"></i></span>
-                ул. 22 Октомври бр.8 - 2420 Радовиш</p>
+                <p><span><i class="fa fa-map-marker"></i></span>ул. 22 Октомври бр.8 - 2420 Радовиш</p>
 
-                <p><span> <i class="fa fa-phone"></i></span>
-                тел/факс: +38932630535 <br> мобилен:  +38970214254 ; +38970389160</p>
+                <p><span><i class="fa fa-phone"></i></span>тел/факс: +38932630535 <br> мобилен:  +38970214254 ; +38970389160</p>
 
-                <p><span><i class="fa fa-envelope"></i></span>
-                22oktomvri@t-home.mk</p>
+                <p><span><i class="fa fa-envelope"></i></span>22oktomvri@t-home.mk</p>
 
-                <p><span><i class="fa fa-credit-card"></i></span>
-               жиро сметка: <br>
+                <p><span><i class="fa fa-credit-card"></i></span>жиро сметка: <br>
                     200000010022808 - Стопанска банка <br>
                     210-0434429401-88 - Тутунска банка</p>
 
             </div>
+
             <div class="kontakt-forma">
 
             </div>
@@ -218,13 +241,17 @@
 </section>
 <!--SECTION kontakt ENDS HERE-->
 
-<footer></footer>
+<footer>22 Октомври ДОО Copyright &copy2016. Сите права се задржани</footer>
 <!--jQuery-->
-<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!--<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>-->
 <script type="text/javascript" src="assets/scripts/jquery.nanogallery.min.js"></script>
 <!--java script scripts-->
 <script src="assets/scripts/gallery.js"></script>
 <script src="assets/scripts/script.js"></script>
-
+<script>
+//    $('#myModal').on('shown.bs.modal', function () {
+//        $('#myInput').focus()
+//    })
+</script>
 </body>
 </html>
