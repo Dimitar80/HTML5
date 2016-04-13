@@ -198,13 +198,13 @@ button.submit:hover .fa{
 /***ZA NAS SECTION **/
 section.zanas{
     width: 100%;
-    height: 77.78vh;
+    height: auto;
     background-color: #ebebeb;
     text-align: center;
     position: relative;
 }
     .zanas .center h1{
-        width: 8.85vw;
+        width: 10vw;
         font-size: 1.88vw;
         font-weight: bold;
         color: #aaaaaa;
@@ -223,6 +223,8 @@ section.zanas{
         color: #aaaaaa;
         line-height:1.5;
         margin: auto;
+        padding-bottom: 25vw;
+
     }
         .zanas-info span{
             font-weight: bold;
@@ -269,7 +271,8 @@ div.red-icons div.center div span{
     font-variant: small-caps;
     line-height: 1.5;
     text-align: center;
-    margin: 2.78vh auto;
+    margin: 0 auto;
+    padding: 2.78vh 0;
    letter-spacing: 0.1vw;
 }
 /***USLUGI SECTION **/
@@ -280,7 +283,7 @@ section.uslugi{
 }
 
     .uslugi .center h1{
-        width: 8.85vw;
+        width: 10vw;
         font-size: 1.88vw;
         font-weight: bold;
         color: #aaaaaa;
@@ -327,10 +330,10 @@ div.uslugi-sliki div{
 section.proekti{
     background:url("../images/proekt_bg.png")no-repeat ;
     background-size: cover;
-    min-height: 87.41vh;
+    height: auto;
 }
 .proekti .center h1{
-    width: 8.85vw;
+    width: 10vw;
     font-size: 1.88vw;
     font-weight: bold;
     color: #aaaaaa;
@@ -366,7 +369,7 @@ section.proekti{
             width: 4.5vw;
             display: block;
             margin:auto;
-            padding-top: 7.4vh;
+            padding: 7.4vh 0;
         }
 
         .proekti .center div.right div{
@@ -381,11 +384,6 @@ section.proekti{
              margin-bottom: 0;
 
          }
-
-
-
-
-
 
 /******proizvodi*************/
 section.proizvodi{
