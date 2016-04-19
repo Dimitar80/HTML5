@@ -308,10 +308,7 @@ div.content{
 	div.content div.left-side{
         width: 70%;
     }
-    div.content div.right-side{
-        width: 30%;
-        background-color: #dc5362;
-    }
+
 div.content div.tabla{
     width: 50.18vw;
     padding-left: 5.09vw;
@@ -477,7 +474,74 @@ div.bottom-posts div p{
 div.bottom-posts div button{
     float: right;
 }
+/*===================================
+=          RIGHT side pink part       =
+===================================*/
+div.content div.right-side{
+	width: 30%;
+	background-color: #dc5362;
+	text-align: center;
+	color: #ffffff;
+}
+	div.content div.right-side h1{
+		font-size: 23px;
+		line-height: 1.2;
+		font-weight: bold;
+		padding: 40px 0 30px 0;
+		text-transform: uppercase;
+	}
+	div.content div.right-side h3{
+		font-size: 14px;
+		line-height: 1.2;
+		font-weight: lighter;
+		letter-spacing: 1px;
+		padding: 10px 0;
 
+	}
+	.right-side .nastava{
+		width: 100%;
+	}
+	.right-side .nastava div{
+		width: 50%;
+		float: left;
+	}
+	.right-side .nastava .prva-smena span ,.right-side .nastava div.vtora-smena span{
+		display: block;
+	}
+
+	.right-side .nastava div span{
+		display:inline-block;
+		padding: 10px 0;
+	}
+
+	.right-side .sekcii{
+		width: 100%;
+	}
+	.right-side .sekcii div{
+		width: 50%;
+		float: left;
+	}
+		.right-side .sekcii div span{
+			display: block;
+			font-size: 14px;
+			line-height: 1.2;
+			font-weight: lighter;
+			padding: 10px 0;
+		}
+
+.right-side .ekskurzii{
+	width: 100%;
+}
+.right-side .ekskurzii span{
+	display: block;
+	text-transform: uppercase;
+	padding: 10px 0 40px 0;
+	line-height: 1.2;
+	font-size: 1.5vw;
+}
+img.ekskurzija{
+	width: 17.39vw;
+}
 /*====================================
 =           footer           =
 ====================================*/
