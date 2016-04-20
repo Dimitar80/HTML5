@@ -208,8 +208,9 @@ div.slider-wrap{
 	width:100%;
 	height:565px;
 	background-color: rgb(87,187,137);
-	padding:15px 0;
+	padding:15px 0 40px;
 }
+
 
 div.slider{
 	width:100%;
@@ -306,7 +307,8 @@ div.content{
 		float: left;
 	}
 	div.content div.left-side{
-        width: 70%;
+        width: 68%;
+        margin-right:2%; 
     }
 
 div.content div.tabla{
@@ -360,13 +362,21 @@ div.posts div:first-child{
     div.posts div div{
         width: 100%;
     }
+	/* h1.naslov-sekcija {
+		border: 3px solid;
+		border-image:-webkit-linear-gradient( 0deg, rgb(129,62,62) 0%, rgb(255,255,255) 100%);  
+		border-left:none;
+		border-right:none;
+		} */
+
     h1.naslov-sekcija img.naslov-slika{
         float: left;
-        padding-top: 0.95vh;
+        padding: 4px 0 0 0;
+        margin-right: 15px;
     }
     span.ime-sekcija{
         display: block;
-        padding:2.95vh 0;
+        padding:1.1vh 0;
         box-sizing: border-box;
         font-size:1.45vw;
         color: rgb(129, 62, 62);
@@ -403,13 +413,20 @@ div.za-roditelite{
     width: 100%;
     margin-top: 4.56vh;
 }
-div.za-roditelite hr{
+div.za-roditelite {
     width: 100%;
 }
+	div.za-roditelite hr{
+		width: 95%;
+	}
 div.za-roditelite div{
     float: left;
     width: 33.33%;
     text-align: center;
+}
+div.docs{
+	box-sizing:border-box;
+	padding-left:70px;
 }
 
     div.za-roditelite div h3{
@@ -440,6 +457,11 @@ div.docs ul{
     div.docs ul li{
         margin-bottom: 33px;
     }
+
+   /*  div.docs ul li img{
+   	float:left;
+   	margin-top:-5px;
+   } */
         div.docs ul li span{
             display: inline-block;
             text-transform: uppercase;
@@ -482,6 +504,7 @@ div.content div.right-side{
 	background-color: #dc5362;
 	text-align: center;
 	color: #ffffff;
+	margin-top: 15px;
 }
 	div.content div.right-side h1{
 		font-size: 23px;
@@ -500,6 +523,7 @@ div.content div.right-side{
 	}
 	.right-side .nastava{
 		width: 100%;
+		background: url('../images/linija.png') no-repeat center 230px ;
 	}
 	.right-side .nastava div{
 		width: 50%;
