@@ -1,6 +1,12 @@
 body{
     font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
 }
+
 .center{
     width: 70%;
     margin: 0 auto;
@@ -346,24 +352,29 @@ section.proekti{
     text-transform: uppercase;
     /*box-shadow:0px 5px 1px 0px rgba(0, 0, 0, 0.16);*/
 }
-    .proekti .center div{
+    .proekti .center div.container{
         /*/!*background-color: #5aff16;*!/only for testing*/
-        width: 50%;
+        width: 100%;
+        /*float: left;*/
+    }
+    .proekti .center div.container div{
+        width:25%;
         float: left;
     }
-        .proekti .center div.left span{
-            display: block;
-            text-align: right;
-            font-size: 1.5vw;
-            color:#ffffff;
-            font-weight: bold;
-            line-height: 0.571;
-            margin-bottom: 6.25vw;
-            margin-right: 2.4vw;
-        }
-        .proekti .center div.left span:last-child{
-            margin-bottom: 0;
-        }
+
+        /*.proekti .center div.left span{*/
+            /*display: block;*/
+            /*text-align: right;*/
+            /*font-size: 1.5vw;*/
+            /*color:#ffffff;*/
+            /*font-weight: bold;*/
+            /*line-height: 0.571;*/
+            /*margin-bottom: 6.25vw;*/
+            /*margin-right: 2.4vw;*/
+        /*}*/
+        /*.proekti .center div.left span:last-child{*/
+            /*margin-bottom: 0;*/
+        /*}*/
 
         .proekti .center img{
             width: 4.5vw;
@@ -372,18 +383,18 @@ section.proekti{
             padding: 7.4vh 0;
         }
 
-        .proekti .center div.right div{
-            float: none;
-            margin-bottom: 6.25vw;
-            font-size: 1.5vw;
-            color:#ffffff;
-            font-weight: bold;
-            line-height: 0.571;
-        }
-        .proekti .center div.right div:last-child{
-             margin-bottom: 0;
+        /*.proekti .center div.right div{*/
+            /*float: none;*/
+            /*margin-bottom: 6.25vw;*/
+            /*font-size: 1.5vw;*/
+            /*color:#ffffff;*/
+            /*font-weight: bold;*/
+            /*line-height: 0.571;*/
+        /*}*/
+        /*.proekti .center div.right div:last-child{*/
+             /*margin-bottom: 0;*/
 
-         }
+         /*}*/
 
 /******proizvodi*************/
 section.proizvodi{
@@ -468,3 +479,6 @@ footer{
     padding:2.78vh 0;
     font-size: 0.8vw;
 }
+
+/*BOOTSTRAP MODAL*/
+#myModal .modal-dialog  {width:75%;}
