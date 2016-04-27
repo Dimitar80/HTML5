@@ -400,6 +400,7 @@ section.proekti{
 section.proizvodi{
     background-color: #ebebeb;
     text-align: center;
+    padding-bottom: 75px;
 }
     .proizvodi .center h1{
     width: 14.85vw;
@@ -421,6 +422,7 @@ section.proizvodi{
             color: #aaaaaa;
             line-height:1.5;
             margin: auto;
+            padding-bottom: 75px;
         }
         .proizvodi-info span{
             font-weight: bold;
@@ -468,7 +470,7 @@ section.kontakt{
         padding-right: 1.3vw;
     }
     div.informacii p span i{
-        color:#8c0000;
+        color: #8c0000;
     }
 
 /*footer*/
