@@ -11,7 +11,10 @@
     <link rel="shortcut icon" href="assets/images/favicon.jpg">
 
 
-    <!--BOOTSTRAP-->
+<!------------------------------------------------------------------------------------------------------------------------
+                                        BOOTSTRAP and JQuery
+-------------------------------------------------------------------------------------------------------------------------->
+
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -19,20 +22,28 @@
 <!--------------------------------------------------------------------------------
                                     CSS STYLES
 ----------------------------------------------------------------------------------->
+
+    <link href="assets/styles/lightbox.css" rel="stylesheet">
+    <link href="assets/styles/animate.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" href="assets/styles/reset.css">
     <link rel="stylesheet" href="assets/styles/main.css">
-<!--------------------------------------------------------------------------------
+
+<!-------------------------------------------------------------------------------------
                                     FONTS
 ----------------------------------------------------------------------------------->
     <link rel="stylesheet" href="assets/fonts/font-awesome-4.5.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-<!--------------------------------------------------------------------------------
+
+<!---------------------------------------------------------------------------------------
                                     SCRIPTS
 ----------------------------------------------------------------------------------->
 
 </head>
 
 <body>
+<!-- /.preloader -->
+<div id="preloader"></div>
+
 <!-- Modal za proekti-->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
@@ -84,7 +95,9 @@
     </div>
 </div>
 
-<!--SECTION HEADER STARTS HERE-->
+<!-----------------------------------------------
+    SECTION HEADER STARTS HERE
+------------------------------------------------->
 <header>
     <div class="top-header">
         <div class="center">
@@ -111,13 +124,23 @@
                 <a href="#proizvodi"><span><i class="fa fa-shopping-cart"></i></span>Производи</a>
                 <a href="#kontakt"><span><i class="fa fa-phone-square"></i></span>Контакт</a>
             </nav>
-            <div class="search-bar" hidden><input type="text"></div>
+            <!-- search form 6 -->
+            <div class="button_box2 search-bar" hidden>
+                <form class="form-wrapper-2 cf">
+                    <input type="text" placeholder="Клучен збор..." required>
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            <!--<div class="search-bar" hidden><input type="text"></div>-->
         </div>
     </div>
 </header>
 <!--SECTION HEADER ENDS HERE-->
 
-<!--SECTION FULL WIDTH PHOTO STARTS HERE-->
+<!--------------------------------------------
+SECTION FULL WIDTH PHOTO STARTS HERE
+---------------------------------------------->
+
 <div class="full-width-photo">
    <div class="center">
        <div class="naslov">
@@ -129,11 +152,9 @@
    <div class="subscription">
        <div class="center">
            <form action="">
-               <div class="input">
-                   <i class="fa fa-user"></i>
-                   <input type="email" placeholder="Email">
-               </div>
-
+                   <p class="email">
+                       <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="subscription" placeholder="Е-маил адреса" />
+                   </p>
                <button class="submit"><i class="fa fa-check"></i></button>
            </form>
            <p>Дознајте први и бидете секогаш во тек со најновите производи кои ги нудиме</p>
@@ -142,10 +163,12 @@
 </div>
 <!--SECTION FULL WIDTH PHOTO ENDS HERE-->
 
-<!--SECTION za nas STARTS HERE-->
+<!-------------------------------------------------------------
+SECTION za nas STARTS HERE
+----------------------------------------------------------------->
 <section class="zanas" id="zanas">
     <div class="center">
-        <img src="assets/images/light-bulb.png" alt="">
+        <img class="wow fadeInLeft" data-wow-delay="0.2" src="assets/images/light-bulb.png" alt="">
         <h1>За нас</h1>
         <div class="zanas-info">
             <span>22 Октомври ДОO</span> e трговско друштво од Радовиш и денеска важи за една од водечките компании во Радовишкиот регион и
@@ -158,18 +181,20 @@
 </section>
 <!--SECTION za nas ENDS HERE-->
 
-<!--SECTION RED ICONS STARTS HERE-->
+<!----------------------------------------------------------------------------------------
+SECTION RED ICONS STARTS HERE
+-------------------------------------------------------------------------------------------->
 <div class="red-icons">
     <div class="center">
-        <div>
+        <div class="wow fadeInUp" data-wow-delay="1">
             <img src="assets/images/store.png" alt="">
             <span>две малопродажни продавници</span>
         </div>
-        <div>
+        <div class="wow fadeInUp" data-wow-delay="1.5">
             <img src="assets/images/diskont.png" alt="">
             <span>еден дисконт за големопродажба</span>
         </div>
-        <div>
+        <div class="wow fadeInUp" data-wow-delay="2">
             <img src="assets/images/vozen-park.png" alt="">
             <span>сопствен <br> возен парк</span>
         </div>
@@ -177,7 +202,9 @@
 </div>
 <!--SECTION RED ICONS ENDS HERE-->
 
-<!--SECTION uslugi STARTS HERE-->
+<!-------------------------------------------------------------------------------------------------------
+SECTION uslugi STARTS HERE
+--------------------------------------------------------------------------------------------------------->
 <section class="uslugi" id="uslugi">
     <div class="center">
         <h1>услуги</h1>
@@ -207,7 +234,9 @@
 </section>
 <!--SECTION uslugi ENDS HERE-->
 
-<!--SECTION proektiSTARTS HERE-->
+<!--------------------------------------------------------------------------------------------------
+SECTION proektiSTARTS HERE
+---------------------------------------------------------------------------------------------------->
 <section class="proekti" id="proekti">
 
     <div class="center">
@@ -235,25 +264,6 @@
             <span>Проекти за Т-Мобиле Македонија</span>
         </div>
 
-<!--try this: https://github.com/kottenator/jquery-circle-progress-->
-
-
-        <!--<div class="left">-->
-            <!--<span>Тендери</span>-->
-            <!--<span>Изведба на инсталации</span>-->
-            <!--<span>Проекти за ЕВН Македонија</span>-->
-            <!--<span>Проекти за Т-Мобиле Македонија</span>-->
-        <!--</div>-->
-        <!--<div class="right">-->
-            <!--<div class="progressbar" id="progressbar1">1</div>-->
-
-            <!--<div class="progressbar" id="progressbar2">2</div>-->
-
-            <!--<div class="progressbar" id="progressbar3">3</div>-->
-
-            <!--<div class="progressbar" id="progressbar4">4</div>-->
-        <!--</div>-->
-
         <img src="assets/images/read-more.png" alt="" data-toggle="modal" data-target="#myModal">
 
     </div>
@@ -261,7 +271,9 @@
 </section>
 <!--SECTION proekti ENDS HERE-->
 
-<!--SECTION proizvodi STARTS HERE-->
+<!------------------------------------------------------------------------------------
+SECTION proizvodi STARTS HERE
+-------------------------------------------------------------------------------------->
 <section class="proizvodi" id="proizvodi">
     <div class="center">
         <h1>Производи</h1>
@@ -296,23 +308,61 @@
 </section>
 <!--SECTION proizvodi ENDS HERE-->
 
-<!--SECTION kontakt STARTS HERE-->
-<section id="kontakt" class="kontakt">
-    <div id="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2982.3195384643905!2d22.453276014973298!3d41.627224089056256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1355fb685a70379d%3A0x2a319d7b365a3186!2s22+Oktomvri+DOO!5e0!3m2!1sen!2smk!4v1460296525045" width="100%" height="768" frameborder="0" style="border:0" allowfullscreen></iframe>
+<!-------------------------------------------------------------------------------------------------
+SECTION kontakt STARTS HERE
+--------------------------------------------------------------------------------------------------->
+<div id="form-main">
+    <div id="form-div">
+        <form class="form" id="form1">
+
+            <p class="name">
+                <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Вашето име" id="name" />
+            </p>
+
+            <p class="email">
+                <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Е-маил адреса" />
+            </p>
+
+            <p class="text">
+                <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Порака"></textarea>
+            </p>
+
+
+            <div class="submit">
+                <input type="submit" value="Испрати" id="button-blue" />
+                <div class="ease"></div>
+            </div>
+        </form>
+
     </div>
+</div>
+
+<section id="kontakt" class="kontakt">
     <div class="kontakt-info">
         <div class="center">
             <div class="informacii">
-                <p><span><i class="fa fa-map-marker"></i></span>ул. 22 Октомври бр.8 - 2420 Радовиш</p>
-
-                <p><span><i class="fa fa-phone"></i></span>тел/факс: +38932630535 <br> мобилен:  +38970214254 ; +38970389160</p>
-
-                <p><span><i class="fa fa-envelope"></i></span>22oktomvri@t-home.mk</p>
-
-                <p><span><i class="fa fa-credit-card"></i></span>жиро сметка: <br>
-                    200000010022808 - Стопанска банка <br>
-                    210-0434429401-88 - Тутунска банка</p>
+                <p class="">
+                    <span><i class="fa fa-map-marker"></i></span>
+                    <span class="text">ул. 22 Октомври бр.8 - 2420 Радовиш</span>
+                </p>
+                <div class="clear"></div>
+                <p>
+                    <span><i class="fa fa-phone"></i></span>
+                    <span class="text">тел/факс: +38932630535 <br> мобилен:  +38970214254 ; +38970389160</span>
+                </p>
+                <div class="clear"></div>
+                <p>
+                    <span><i class="fa fa-envelope"></i></span>
+                    <span class="text">22oktomvri@t-home.mk</span>
+                </p>
+                <div class="clear"></div>
+                <p>
+                    <span><i class="fa fa-credit-card"></i></span>
+                    <span class="text">жиро сметка:<br>
+                    200000010022808 - Стопанска банка<br>
+                    210-0434429401-88 - Тутунска банка
+                    </span>
+                </p>
 
             </div>
 
@@ -321,28 +371,36 @@
             </div>
         </div>
     </div>
+    <div id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2982.3195384643905!2d22.453276014973298!3d41.627224089056256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1355fb685a70379d%3A0x2a319d7b365a3186!2s22+Oktomvri+DOO!5e0!3m2!1sen!2smk!4v1460296525045" width="100%" height="555" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+
 </section>
 <!--SECTION kontakt ENDS HERE-->
 
-<footer>22 Октомври ДОО Copyright &copy2016. Сите права се задржани</footer>
+<footer>
+    <a href="#pocetna" class="up-scroll"><img src="assets/images/up-scroll-arrow.png" alt=""></a>
+    <span>22 Октомври ДОО Copyright &copy2016. Сите права се задржани.</span>
+</footer>
 
 <!--------------------------------------------------------------------------------
                                     SCRIPTS
 ----------------------------------------------------------------------------------->
 <script src="assets/scripts/circle-progress.js"></script>
+<script src="assets/scripts/smooth_scroll.js"></script>
+<script src="assets/scripts/wow.min.js"></script>
 
 <!--GALLERY-->
+<script src="assets/scripts/gallery/lightbox.js"></script>
 <script src="assets/scripts/gallery/snapGallery.js"></script>
 <script src="assets/scripts/gallery/gallery.js"></script><!-- CUSTOM JS File for the gallery-->
 
 <script src="assets/scripts/script.js"></script>
 <script>
-//    $('#myModal').on('shown.bs.modal', function () {
-//        $('#myInput').focus()
-//    })
+    new WOW().init();
 </script>
-
 <script>
+
     $('#circle1').circleProgress({
         value: 1,
         size: 200,

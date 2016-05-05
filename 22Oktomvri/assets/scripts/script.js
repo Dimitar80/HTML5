@@ -5,4 +5,24 @@ $(document).ready(function(){
     $(".fa-search").click(function(){
         $("div.search-bar").toggle();
     });
+
+
+//smooth scroll code
+    $('a').smoothScroll({
+        speed:800
+    });
+
+    $('a.up-scroll').on('click', function() {
+        $.smoothScroll({
+            //scrollElement: $('.scrollme'),
+            scrollTarget: '#pocetna',
+            speed:1000
+        });
+        return false;
+    });
+// Animate loader off screen
+    $(window).load(function() {
+
+        $("#preloader").fadeOut(2000);
+    });
 });
