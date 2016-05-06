@@ -32,11 +32,15 @@ input:focus, textarea:focus {
 background-color:white;
 }
 
-/*HEADER*/
+/******************************************************************************************
+                                   HEADER
+*******************************************************************************************/
 header{
     border-bottom: 5px solid #a31717;
 }
-/*header-top*/
+/******************************************************************************************
+                                    HEADER TOP
+*******************************************************************************************/
 .top-header{
     width: 100%;
     min-height: 4.63vh;
@@ -45,7 +49,7 @@ header{
     padding: 1.39vh 0;
     font-size: 0.94vw;
 }
-/*quick info part*/
+/*****QUICK INFO TOP PART*********/
 .quick-info{
     float: right;
     color: #ffffff;
@@ -57,8 +61,10 @@ header{
     cursor: pointer;
     margin-left: 2.19vw;
 }
+/******************************************************************************************
+                                   header-bottom
+*******************************************************************************************/
 
-/*header-bottom*/
 .bottom-header{
     background-image: -moz-linear-gradient( 90deg, rgb(215,215,215) 0%, rgb(255,255,255) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(215,215,215) 0%, rgb(255,255,255) 100%);
@@ -76,11 +82,10 @@ header{
 nav{
     float: right;
 }
-/*search tool*/
+/******************************************************************************************
+                                   SEARCH TOOL HIDDEN
+*******************************************************************************************/
 
-.button_box2 {
-    /*margin:100px auto;*/
-}
 /*-------------------------------------*/
 .cf:before, .cf:after{
     content:"";
@@ -96,7 +101,6 @@ nav{
 
 .form-wrapper-2 {
     width: 330px;
-    /*padding: 15px;*/
 }
 .form-wrapper-2 input {
     width: 240px;
@@ -159,12 +163,7 @@ nav{
     top: 12px;
     left: -6px;
 }
-.form-wrapper-2 button:hover:before{
-    /*border-right-color: #a31717;*/
-}
-.form-wrapper-2 button:focus:before{
-    /*border-right-color: #c42f2f;*/
-}
+
 .form-wrapper-2 button::-moz-focus-inner {
     border: 0;
     padding: 0;
@@ -174,12 +173,12 @@ div.search-bar{
     position: absolute;
     top: 0;
     right: 0;
-    /*width: 15.63vw;*/
-    /*height: 4.26vh;*/
     background-color: #bfbebe;
 }
 
-/*********************MENU**************************************/
+/******************************************************************************************
+                                    MENU
+*******************************************************************************************/
 div.bottom-header .center{
     position: relative;
 }
@@ -219,8 +218,9 @@ nav.menu a span{
 
 }
 
-
-/**FULL WIDTH PHOTO**/
+/******************************************************************************************
+                                    FULL WIDTH PHOTO
+*******************************************************************************************/
 .full-width-photo{
     width: 100%;
     height: 77.78vh;
@@ -249,7 +249,9 @@ nav.menu a span{
     width: 4.78vw;
     margin-top: 6.48vh;
 }
-/*SUBSCRIPTION PART*/
+/******************************************************************************************
+                                 SUBSCRIPTION PART
+*******************************************************************************************/
 
 div.subscription{
     width: 100%;
@@ -315,7 +317,9 @@ button.submit:hover .fa{
     color: #404040;
     transform: scale(1.5);/*zoom effect*/
 }
-/***ZA NAS SECTION **/
+/******************************************************************************************
+                                    ZA NAS
+*******************************************************************************************/
 section.zanas{
     width: 100%;
     height: auto;
@@ -358,7 +362,9 @@ section.zanas{
         z-index: 1;
     }
 
-/***RED SECTION ICONS***/
+/******************************************************************************************
+                                    RED SECTION ICONS
+*******************************************************************************************/
 div.red-icons{
     width: 100%;
     height: 28vh;
@@ -395,7 +401,9 @@ div.red-icons div.center div span{
     padding: 2.78vh 0;
    letter-spacing: 0.1vw;
 }
-/***USLUGI SECTION **/
+/******************************************************************************************
+                                   USLUGI
+*******************************************************************************************/
 section.uslugi{
     width: 100%;
     background-color: #ebebeb;
@@ -414,7 +422,6 @@ section.uslugi{
         margin: 0 auto 6.94vh auto;
         padding: 9.26vh 0 2.31vh 0;
         text-transform: uppercase;
-        /*box-shadow:0px 5px 1px 0px rgba(0, 0, 0, 0.16);*/
     }
         .uslugi-info{
             width: 80%;
@@ -446,7 +453,9 @@ div.uslugi-sliki div{
     }
 
 
-/**********Proekti********/
+/******************************************************************************************
+                                    PROEKTI
+*******************************************************************************************/
 section.proekti{
     background:url("../images/proekt_bg.png")no-repeat center;
     background-size: cover;
@@ -493,7 +502,9 @@ section.proekti{
     }
 
 
-/******proizvodi*************/
+/******************************************************************************************
+                                    PROIZVODI
+*******************************************************************************************/
 section.proizvodi{
     background-color: #ebebeb;
     text-align: center;
@@ -527,7 +538,7 @@ section.proizvodi{
         }
 
 /**********************************************************************************
-SEND US MESSAGE
+                                SEND US MESSAGE
 ***********************************************************************************/
 #form-main{
     width:100%;
@@ -542,7 +553,7 @@ SEND US MESSAGE
     background-color:rgba(72,72,72,0.4);
     padding:35px;
     margin: 0 auto;
-    width: 450px;
+    width: 40%;
     -moz-border-radius: 7px;
     -webkit-border-radius: 7px;
 }
@@ -672,45 +683,39 @@ textarea {
 
 @media only screen and (max-width: 580px) {
     #form-div{
-        left: 3%;
-        margin-right: 3%;
         width: 88%;
-        margin-left: 0;
         padding-left: 3%;
         padding-right: 3%;
+        margin:0 auto;
     }
 }
 
-/***************************************************************************************
+/******************************************************************************************
                                     KONTAKT
 *******************************************************************************************/
 
 section.kontakt{
     width: 100%;
+    height: 558px;
     position: relative;
 }
 
     section.kontakt > div{
         float: left;
         width: 50%;
-        /*height: 550px;*/
+        height: 558px;
     }
-    /*div.map{*/
-        /*height: 550px;*/
-    /*}*/
+
     div.map iframe{
             width: 100%;
-            height: 550px;
+            /*height: 550px;*/
             background-color: #CCC;
         }
     div.kontakt-info{
        background: url("../images/bg.png") center no-repeat;
         padding: 90px 0px;
     }
-    /*div.kontakt-info .center div{*/
-        /*float: left;*/
-        /*width: 50%;*/
-    /*}*/
+
     div.informacii p{
         padding-bottom: 50px;
         font-size: 1.25vw;
@@ -729,12 +734,14 @@ section.kontakt{
         padding-bottom: 45px;
     }
 
-/*footer*/
+/*****************************************************************************************
+                                       FOOTER
+*******************************************************************************************/
 footer{
     text-align: center;
     background-color: #ebebeb;
     color: #000;
-    padding:5px 0;
+    padding-top:15px;
     font-size: 0.8vw;
 }
     footer span{
@@ -764,6 +771,12 @@ footer{
         }
     }
 
-/*BOOTSTRAP MODAL*/
+/***************************************************************************************
+                                BOOTSTRAP MODAL
+****************************************************************************************/
 #myModal .modal-dialog  {width:75%;}
+
+#myModal ol{
+    list-style:decimal;
+}
 

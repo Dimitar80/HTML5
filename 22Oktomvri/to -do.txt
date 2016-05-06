@@ -1,0 +1,5 @@
+to -do 
+1. Modali dizajni
+2.Proekti scroll on wheel problem 
+3.Responsive media queries
+4.
