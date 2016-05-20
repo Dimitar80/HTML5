@@ -5,7 +5,7 @@ var sliki=['golema1.jpg',
 			'golema5.jpg',
 			];
 
-var brojac=0;
+var brojac=1;
 var slika=document.querySelector('#slika');			
 
 setInterval(function(){
@@ -14,4 +14,4 @@ setInterval(function(){
 	}
 	slika.src='images/' + sliki[brojac];
 	brojac++;
-},1000);
+},3000);

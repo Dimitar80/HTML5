@@ -2,11 +2,17 @@
 <html lang="en" id="overlay">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>e-Portfolio</title>
     <link rel="stylesheet" href="assets/styles/reset.css">
     <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/styles/mobile.css">
+    <link rel="stylesheet" href="assets/styles/jquery.bxslider.css">
+    <link rel="stylesheet" href="assets/styles/animate.css">
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <!-- jQuery library (served from Google) -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
     <script src="assets/scripts/loading.js"></script>
 </head>
@@ -15,14 +21,87 @@
 <div class="bg-img"></div>
 <div class="bg-content">
     <img src="assets/images/KSh-belo.png" alt="" class="logo-golemo">
-    <button class="btn">Get in touch</button>
+    <span class="intro-quote">imagination is the begining of creation</span>
+    <!--mouse scroll icon-->
+    <a class="mouse-scroll" href="#menu">
+      <span class="mouse">
+        <span class="mouse-movement">
+        </span>
+      </span>
+      <span class="mouse-message fadeIn">scroll</span>
+    </a>
 </div>
 
-<nav class="menu">
-    <a href="">Почетна</a>
+<nav class="menu" id="menu">
+    <a href="" class="btn btn-2">Home</a>
+    <a href="" class="btn btn-2">About me</a>
+    <a href="" class="btn btn-2">Services</a>
+    <a href="" class="btn"></a> <img src="assets/images/ksh-sivo.png" alt="">
+
+    <a href="" class="btn btn-2">My work</a>
+    <a href="" class="btn btn-2">Skills</a>
+    <a href="" class="btn btn-2">Contact me</a>
+
 </nav>
 
+<div class="about-me" id="about-me">
+    <div class="center">
+        <h2 class="title"><span>About me</span></h2>
+        <div class="row">
+            <div class="col-1">
+                <img src="assets/images/about-me.png" alt="">
+            </div>
+            <div class="col-2">
+                <h3>echo 'HI';</h3>
+                <p>I am Kristina, <span class="pink">Web designer.</span> <br>
+                    My objective is to make a positive impact on clients and co-workers
+                    using my skills and experience to offer clean and attractive web designs.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
 
+<div class="services" id="services">
+    <div class="center">
+        <h2 class="title"><span>Services</span></h2>
+        <div class="row">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+
+
+<!--SLIDER-->
+<ul class="bxslider">
+    <li><img src="assets/images/quote1.png" title="" >
+        <div class="bx-caption option animated bounce">
+            <span>Design is thinking made visual</span>
+            <span class="author">~ Saul Bass ~</span>
+        </div>
+
+    </li>
+    <li><img src="assets/images/quote2.png" title="">
+        <div class="bx-caption option animated bounce">
+            <span>First solve the problem. Than write the code</span>
+            <span class="author">~ John Johnson ~</span>
+        </div>
+    </li>
+    <li><img src="assets/images/quote3.png" title="" >
+        <div class="bx-caption bx-caption option animated bounce">
+            <span>Websites promote you 24/7: No employee will do that</span>
+            <span class="author">~ Paul Cookson ~</span>
+        </div>
+    </li>
+</ul>
+
+
+<!-- bxSlider Javascript file -->
+<script src="assets/scripts/jquery.bxslider.min.js"></script>
+<script src="assets/scripts/slider.js"></script>
 
 </body>
 

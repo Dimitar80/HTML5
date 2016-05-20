@@ -56,6 +56,7 @@
             </div>
             <div class="modal-body">
                 <ol>
+                    <h3>Тендери</h3>
                     <li>Тендер за одржување на улично осветлување во Општина Радовиш и села за 2013/2014.</li>
                     <li>Тендер за одржување на улично осветлување во Општина Радовиш и села за 2012/2013.</li>
                     <li>Тендер за набавка на материјали за разни поправки, ситен инвентар и резервни делови за потребите на Општинското основно училиште “Крсте Петков Мисирков”-Радовиш, за период од една година, односно во текот на 2013год.</li>
@@ -79,29 +80,28 @@
                     <li>Тендер за набавка на железарија и алат за потребите на Јавно Комунално Претпријатие Плаваја – Радовиш, за период од една година, односно во текот на 2011год.</li>
                 </ol>
                 <ol>
+                    <h3>Изведба на инсталации</h3>
                     <li>Изведба на осветлување во кругот на фабрика за зејтин Брилијант – Штип.</li>
                     <li>Замена и монтажа на светилки на плац за бензин ЛукОил – Штип.</li>
                     <li>Изведба на електро-монтерски работи од темел до кров на ОУ “Никола Карев” – Радовиш.</li>
                     <li>Реконструкција на електрична инсталација на ОУ “Кирил и Методиj” c.Oраовица –Радовиш.</li>
                     <li>Комплетна изведба на електрична инсталација, сувомесната фабрика “6ти Ноември” –Радовиш.</li>
                 </ol>
-                За потребите на ЕВН Македонија АД Скопје:
+                <h3>За потребите на ЕВН Македонија АД Скопје:</h3>
                 <ol>
                     <li>Изведба на далеководи со трафостаници.</li>
                     <li>Давање на приклучоци на нови потрошувачи.</li>
                     <li>Oтклонување на дефек на НН линии и ВН линии.</li>
-                </ol>    
-                    За потребите на ЕВН Македонија АД Скопје:
-                  
-                    За потребите на Т-Мобиле Македонија АД Скопје:
+                </ol>
+
+                   <h3>За потребите на Т-Мобиле Македонија АД Скопје</h3>
                 <ol>
                     <li>Комплетна инсталација на продажен салон во општина Радовиш.</li>
                     <li>Изведба на трафостаница за предавател во Неготино.</li>
                     <li>Отклонување на дефек на НН линии.</li>
 
                 </ol>
-                    
-                
+                <img src="assets/images/lb.png" alt="">
             </div>
         </div>
     </div>
@@ -132,7 +132,7 @@
                 <a href="#pocetna"><span><i class="fa fa-home"></i></span>Почетна</a>
                 <a href="#zanas"><span><i class="fa fa-users"></i></span>За нас</a>
                 <a href="#uslugi"><span><i class="fa fa-briefcase"></i></span>Услуги</a>
-                <a href="#proekti"><span><i class="fa fa-file-text"></i></i></span>Проекти</a>
+                <a href="#proekti" onclick="myFunction()"><span><i class="fa fa-file-text"></i></i></span>Проекти</a>
                 <a href="#proizvodi"><span><i class="fa fa-shopping-cart"></i></span>Производи</a>
                 <a href="#form-main"><span><i class="fa fa-phone-square"></i></span>Контакт</a>
             </nav>
@@ -180,7 +180,7 @@ SECTION za nas STARTS HERE
 --------------------------------------------------------------- -->
 <section class="zanas" id="zanas">
     <div class="center">
-        <img class="wow fadeInLeft" data-wow-delay="0.2" src="assets/images/light-bulb.png" alt="">
+
         <h1>За нас</h1>
         <div class="zanas-info">
             <span>22 Октомври ДОO</span> e трговско друштво од Радовиш и денеска важи за една од водечките компании во Радовишкиот регион и
@@ -188,8 +188,13 @@ SECTION za nas STARTS HERE
             Благодарение на стручниот тим на вработени, повеќе од една декада обезбедува квалитет и доверливост при работењето
             со своите клиенти.
         </div>
-
+       <!--прочитај повеќе модал-->
+        <div class="btn-more wow fadeInUp">
+            <input type="submit" value="Прочитај повеќе" class="procitaj"/>
+            <div class="ease-hov"></div>
+        </div>
     </div>
+
 </section>
 <!--SECTION za nas ENDS HERE-->
 
@@ -213,6 +218,7 @@ SECTION RED ICONS STARTS HERE
     </div>
 </div>
 <!--SECTION RED ICONS ENDS HERE-->
+
 
 <!- ------------------------------------------------------------------------------------------------------
 SECTION uslugi STARTS HERE
@@ -276,7 +282,12 @@ SECTION proekti STARTS HERE
             <span>Проекти за Т-Мобиле Македонија</span>
         </div>
 
-        <img src="assets/images/read-more.png" alt="" data-toggle="modal" data-target="#myModal">
+
+        <!--прочитај повеќе модал-->
+        <div class="btn-uslugi wow fadeInUp" data-toggle="modal" data-target="#myModal">
+            <input type="submit" value="Прочитај повеќе" class="procitaj-uslugi"/>
+            <div class="ease-hov-uslugi"></div>
+        </div>
 
     </div>
 
@@ -327,21 +338,21 @@ SECTION kontakt STARTS HERE
     <div id="form-div">
         <form class="form" id="form1">
 
-            <p class="name">
+            <p class="name wow fadeInUp">
                 <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Вашето име" id="name" />
             </p>
 
-            <p class="email">
+            <p class="email wow fadeInUp">
                 <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Е-маил адреса" />
             </p>
 
-            <p class="text">
+            <p class="text wow fadeInUp">
                 <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Порака"></textarea>
             </p>
 
 
-            <div class="submit">
-                <input type="submit" value="Испрати" id="button-blue" />
+            <div class="submit wow fadeInUp">
+                <input type="submit" value="Испрати" class="button-red "/>
                 <div class="ease"></div>
             </div>
         </form>
@@ -413,8 +424,9 @@ SECTION kontakt STARTS HERE
     new WOW().init();
 </script>
 <script>
-// using on
-$('#uslugi').on('mousewheel', function(event) {
+
+
+$('#proekti').on('mousewheel', function(event) {
 
      $('#circle1').circleProgress({
         value: 1,
@@ -438,31 +450,31 @@ $('#uslugi').on('mousewheel', function(event) {
     });
 
 });
-$(window).scroll(function() {
+
+function myFunction() {
 
 
-     $('#circle1').circleProgress({
+    $('#circle1').circleProgress({
         value: 1,
         size: 200,
-        fill: { color: "#8c0000" }
+        fill: {color: "#8c0000"}
     });
     $('#circle2').circleProgress({
         value: 1,
         size: 200,
-        fill: { color: "#8c0000" }
+        fill: {color: "#8c0000"}
     });
     $('#circle3').circleProgress({
         value: 1,
         size: 200,
-        fill: { color: "#8c0000" }
+        fill: {color: "#8c0000"}
     });
     $('#circle4').circleProgress({
         value: 1,
         size: 200,
-        fill: { color: "#8c0000" }
+        fill: {color: "#8c0000"}
     });
-
-});
+}
    
 </script>
 </body>

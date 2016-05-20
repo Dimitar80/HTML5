@@ -1,6 +1,82 @@
+/***************************
+****************************
+FONTS
+****************************
+***************************/
+@font-face {
+    font-family:OpenSansBold ;
+    src: url("../fonts/OpenSans-CondBold.ttf");
+}
+@font-face {
+    font-family:OpenSansLight ;
+    src: url("../fonts/OpenSans-CondLight.ttf");
+}
+@font-face {
+    font-family:OpenSansItalic ;
+    src: url("../fonts/OpenSans-CondLightItalic.ttf");
+}
+/***************************
+****************************
+General classes
+****************************
+***************************/
+.center{
+    width: 80%;
+    margin: 0 auto;
+}
+    .center .row{
+        width: 100%;
+        overflow: hidden;
+    }
+        .center .row div{
+            float: left;
+            width: 50%;
+        }
+
+h2.title {
+    font-size: 36px;
+    font-family: OpenSansBold;
+    padding-top: 80px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto 80px auto;
+    width: 380px;
+    position: relative;
+    z-index: 1;
+    opacity: .8;
+}
+h2.title:before {
+    border-top: 2px solid #b9a695;
+    content: "";
+    margin: 0 auto;
+    /* this centers the line to the full width specified */
+    position: absolute;
+    /* positioning must be absolute here, and relative positioning must be applied to the parent */
+    top: calc(50% + 40px);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 95%;
+    z-index: -1;
+}
+h2.title span {
+    /* to hide the lines from behind the text, you have to set the background color the same as the container */
+    background: #cbcbcb;
+    padding: 0 15px;
+}
+.title{
+
+}
+/***************************
+****************************
+BODY
+****************************
+***************************/
+
 html, body {
     width: 100%;
     height: 100%;
+    font-family: OpenSansLight;
 }
 
 /*LOADING ICON*/
@@ -12,7 +88,7 @@ html, body {
     top: 0px;
     width: 100%;
     height: 100%;
-    z-index: 9999;
+    z-index: 999999;
     background: url("../images/Preloader_2.gif") center no-repeat #fff;
 }
 /*************************full width screen image****************/
@@ -41,4 +117,264 @@ html, body {
     top:0;
     z-index: 9999;
 
+}
+    .bg-content img{
+        width: 18.5vw;
+        position: absolute;
+        left: calc(50% - 9.25vw);
+        top:100px;
+    }
+    .bg-content span.intro-quote{
+        text-transform: uppercase;
+        font-family: OpenSansBold;
+        font-size: 2.81vw;
+        color: #ffffff;
+        position: absolute;
+        left: 27%;
+        bottom:200px;
+    }
+
+/*mouse scroll icon*/
+/*// Animations*/
+@-webkit-keyframes scroll-ani {
+    0% {
+        opacity: 1;
+        top: 29%;
+    }
+    15% {
+        opacity: 1;
+        top: 50%;
+    }
+    50% {
+        opacity: 0;
+        top: 50%;
+    }
+    100% {
+        opacity: 0;
+        top: 29%;
+    }
+}
+
+@-moz-keyframes scroll-ani {
+    0% {
+        opacity: 1;
+        top: 29%;
+    }
+    15% {
+        opacity: 1;
+        top: 50%;
+    }
+    50% {
+        opacity: 0;
+        top: 50%;
+    }
+    100% {
+        opacity: 0;
+        top: 29%;
+    }
+}
+
+@keyframes scroll-ani {
+    0% {
+        opacity: 1;
+        top: 29%;
+    }
+    15% {
+        opacity: 1;
+        top: 50%;
+    }
+    50% {
+        opacity: 0;
+        top: 50%;
+    }
+    100% {
+        opacity: 0;
+        top: 29%;
+    }
+}
+.mouse-scroll {
+    display: inline-block;
+    line-height: 18px;
+    font-size: 13px;
+    font-weight: normal;
+    color: #7F8C8D;
+    color: #FFFFFF;
+    font-family: OpenSansBold;
+    letter-spacing: 2px;
+    text-decoration: none;
+    overflow: hidden;
+    position: absolute;
+    left: 48.5%;
+    bottom: 25px;
+}
+.mouse-scroll .mouse {
+    position: relative;
+    display: block;
+    width: 46px;
+    height: 73px;
+    margin: 0 auto 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 3px solid #FFF;
+    border-radius: 23px;
+}
+.mouse-scroll .mouse .mouse-movement {
+    position: absolute;
+    display: block;
+    top: 29%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    margin: -4px 0 0 -4px;
+    background: #FFF;
+    border-radius: 50%;
+    -webkit-animation: scroll-ani 4s linear infinite;
+    -moz-animation: scroll-ani 4s linear infinite;
+    animation: scroll-ani 4s linear infinite;
+}
+.mouse-scroll .mouse-message {
+    float: left;
+    margin: -200px 0 0 7px;
+    padding: 0;
+    -webkit-animation: scroll-ani 4s linear infinite;
+    -moz-animation: scroll-ani 4s linear infinite;
+    animation: scroll-ani 4s linear infinite;
+}
+.mouse-scroll:hover .mouse-message {
+    margin-top: 0;
+}
+/***************************
+****************************
+MENU
+****************************
+***************************/
+nav{
+    text-align: center;
+    padding: 15px 0px;
+    position: relative;
+}
+    nav img{
+
+        width: 50px;
+        position: absolute;
+        left: 48%;
+
+    }
+
+.btn {
+    color: rgba(0,0,0,.6);
+    font-family: OpenSansBold;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 45px;
+    max-width: 160px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    width: 100%;
+}
+.btn-2 {
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.btn-2:hover,
+.btn-2:active {
+    letter-spacing: 5px;
+}
+
+.btn-2:after,
+.btn-2:before {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 3px solid rgba(185, 166, 149,0);
+    bottom: 0px;
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    -webkit-transition: all 280ms ease-in-out;
+    transition: all 280ms ease-in-out;
+    width: 0;
+}
+
+.btn-2:hover:after,
+.btn-2:hover:before {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-color: #b9a695;
+    -webkit-transition: width 350ms ease-in-out;
+    transition: width 350ms ease-in-out;
+    width: 70%;
+}
+
+.btn-2:hover:before {
+    bottom: auto;
+    top: 0;
+    width: 70%;
+}
+/***************************
+****************************
+About me
+****************************
+***************************/
+div.about-me{
+    /*height:750px ;*/
+    width: 100%;
+    background-color: #cbcbcb;
+}
+
+    div.about-me .row .col-1 img{
+        width: 35.94vw;
+    }
+    div.about-me .row .col-2 h3{
+        font-family: OpenSansLight;
+        font-size: 36px;
+        padding: 30px 0 50px 0;
+    }
+    div.about-me .row .col-2 p{
+        width: 32.29vw;
+        font-size: 28px;
+        font-family: OpenSansLight;
+        color: rgb(0, 0, 0);
+        line-height: 1.6;
+        text-align: left;
+    }
+    span.pink{
+        color: #b70c6d;
+    }
+
+/***************************
+****************************
+Services
+****************************
+***************************/
+.services{
+    background-color: #cbcbcb;
+}
+    .services .center .row div{
+        float: left;
+        width: 20%;
+        height: 200px;
+        background-color: #baa695;
+        margin-right: 3.33%;
+        margin-bottom: 80px;
+    }
+    .services .center .row div:last-child{
+        margin-right:0px;
+    }
+
+/***************************
+****************************
+Slider
+****************************
+***************************/
+.option {
+    -webkit-animation-duration: 4s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count:infinite;
 }
