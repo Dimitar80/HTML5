@@ -1,0 +1,104 @@
+.wrap {
+border: 1px solid gainsboro;
+width: 100%;
+height: 350px;
+overflow: hidden;
+}
+
+.wrap ul {
+padding: 0;
+margin: 0;
+list-style: none;
+height: 350px;
+width:300%;
+transition: all 1s ease-in-out;
+}
+
+.wrap ul li {
+width: 11.1111%;
+height: 350px;
+float: left;
+}
+
+li.news1 {
+    background-image: url("images/1.jpg");
+    background-size: cover;
+}
+
+li.news2 {
+    background-image: url("images/2.jpg");
+    background-size: cover;
+}
+
+li.news3 {
+    background-image: url("images/3.jpg");
+    background-size: cover;
+}
+
+li.news4 {
+    background-image: url("images/4.jpg");
+    background-size: cover;
+}
+
+li.news5 {
+    background-image: url("images/5.jpg");
+    background-size: cover;
+}
+
+li.news6{
+    background-image: url("images/6.jpg");
+    background-size: cover;
+}
+
+li.news7{
+    background-image: url("images/7.jpg");
+    background-size: cover;
+}
+
+li.news8{
+    background-image: url("images/8.jpg");
+    background-size: cover;
+}
+
+li.news9{
+    background-image: url("images/9.jpg");
+    background-size: cover;
+}
+
+li{
+    position: relative;
+}
+
+/*.read-more{*/
+    /*position: absolute;*/
+    /*top:200px;*/
+    /*left: 35%;*/
+    /*cursor: hand;*/
+    /*font-size: 24px;*/
+    /*color: darkred;*/
+    /*font-weight: 700;*/
+/*}*/
+.overlay{
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100% ;
+    height: 350px;
+    transition: .5s ease-in-out;
+}
+.text-title{
+    position: absolute;
+    top:150px;
+    left: 35%;
+    color: #b9a695;
+    font-size: 36px;
+    font-weight: 900;
+    z-index: 9999;
+
+}
+
+li:hover .overlay{
+    opacity: .3;
+}
