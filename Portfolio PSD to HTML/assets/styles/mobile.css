@@ -1,5 +1,63 @@
-@media(max-width: 500px) {
-    div.about-me {
+@media(max-width: 1200px) {
+    .bg-content img{
+        width: 220px;
+        left: calc(50% - 110px);
+    }
+}
+@media(max-width: 1000px) {
+    .bg-content span.intro-quote{
+        font-size: 4.81vw;
+        left: 7%;
+    }
+}
+@media(max-width: 768px){
+    .btn{
+        display: block;
+        margin: 0 auto;
+    }
+    nav img{
+        display: none;
+    }
+    .center .row div.col-1 {
+        width: 100%;
+    }
+    .center .row div.col-2 {
+        width: 100%;
+    }
+    div.about-me .row .col-1 img {
+        width: 100%;
+    }
+    div.about-me .row .col-2 p {
+        width: 100%;
+    }
 
+    .services .center .row {
+        display: inline-block;
+        font-size: 0;
+    }
+
+    .services .center .row div.service {
+        width: 36.5vw;
+        height: 36.5vw;
+        margin-right: 0;
+    }
+
+    .services .center .row div.service:nth-child(odd) {
+        margin-right: 3.9vw;
+    }
+    h2.title{
+        width: 300px;
+    }
+}
+
+@media(max-width: 440px){
+    .services .center .row div.service {
+        width: 76.59vw;
+        height: 76.59vw;
+        margin-right: 0;
+    }
+
+    .services .center .row div.service:nth-child(odd) {
+        margin-right: 0;
     }
 }
