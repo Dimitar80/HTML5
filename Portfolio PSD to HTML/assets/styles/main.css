@@ -285,7 +285,7 @@ nav {
 
 nav img {
 
-    width: 50px;
+    width: 3.65vw;
     position: absolute;
     left: 48%;
 
@@ -409,16 +409,21 @@ Services
     }
 .mask{
     display: none;
-    width: 15vw;!important;
-    height: 15vw;
+    width: 19vw;!important;
+    height: 19vw;
     float: none;
-    border: 2px solid white;
+    /*border: 2px solid white;*/
     position: absolute;
-    left:calc(50% - 7.5vw);
-    top:calc(50% - 7.5vw);
-
-
+    top: 0;
+    left:0;
 }
+    .mask h3{
+        color: #ffffff;
+        position: absolute;
+        left: 20%;
+        top: 25%;
+        font-size: 2.18vw;
+    }
 .services .center .row div.service:hover .mask{
     display: block;
     background-color: rgba(0,0,0,.8);
