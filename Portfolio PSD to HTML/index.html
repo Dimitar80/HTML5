@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>e-Portfolio</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!--CSS STYLES-->
     <link rel="stylesheet" href="assets/styles/reset.css">
     <link rel="stylesheet" href="assets/styles/main.css">
     <link rel="stylesheet" href="assets/styles/mobile.css">
@@ -16,6 +27,7 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
     <script src="assets/scripts/loading.js"></script>
 </head>
+
 <body>
 <div class="se-pre-con"></div>
 <div class="bg-img"></div>
@@ -108,7 +120,77 @@
         </div>
     </li>
 </ul>
+<div class="my-work">
+    <div class="center">
+        <h2 class="title"><span>My Work</span></h2>
+        <!-- Filter Controls - Simple Mode -->
+        <div class="row">
+            <!-- A basic setup of simple mode filter controls, all you have to do is use data-filter="all"
+            for an unfiltered gallery and then the values of your categories to filter between them -->
+            <ul class="simplefilter">
+                <li class="active" data-filter="all">All Categories</li>
+                <li data-filter="1">Web Designs</li>
+                <li data-filter="2">Front-end development</li>
+                <li data-filter="3">Admin Panel</li>
+                <li data-filter="4">Sketches</li>
+                <li data-filter="5">Illustrations</li>
+            </ul>
+        </div>
 
+        <div class="row">
+            <!-- This is the set up of a basic gallery, your items must have the categories they belong to in a data-category
+            attribute, which starts from the value 1 and goes up from there -->
+            <div class="filtr-container">
+                <div class="col-xs-12 col-sm-6 col-md-4 filtr-item" data-category="1, 5" data-sort="Busy streets">
+                    <img class="img-responsive" src="assets/images/forher.png" alt="sample image">
+                    <span class="item-desc">Wedding planner</span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 filtr-item" data-category="2, 5" data-sort="Luminous night">
+                    <img class="img-responsive" src="assets/images/forher.png" alt="sample image">
+                    <span class="item-desc">Luminous night</span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 filtr-item" data-category="1, 4" data-sort="City wonders">
+                    <img class="img-responsive" src="assets/images/forher.png" alt="sample image">
+                    <span class="item-desc">city wonders</span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 filtr-item" data-category="3" data-sort="In production">
+                    <img class="img-responsive" src="assets/images/forher.png" alt="sample image">
+                    <span class="item-desc">in production</span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 filtr-item" data-category="3, 4" data-sort="Industrial site">
+                    <img class="img-responsive" src="assets/images/forher.png" alt="sample image">
+                    <span class="item-desc">industrial site</span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 filtr-item" data-category="2, 4" data-sort="Peaceful lake">
+                    <img class="img-responsive" src="assets/images/forher.png" alt="sample image">
+                    <span class="item-desc">peaceful lake</span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 filtr-item" data-category="1, 5" data-sort="City lights">
+                    <img class="img-responsive" src="assets/images/forher.png" alt="sample image">
+                    <span class="item-desc">city lights</span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 filtr-item" data-category="2, 4" data-sort="Dreamhouse">
+                    <img class="img-responsive" src="assets/images/forher.png" alt="sample image">
+                    <span class="item-desc">dreamhouse</span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 filtr-item" data-category="3" data-sort="Restless machines">
+                    <img class="img-responsive" src="assets/images/forher.png" alt="sample image">
+                    <span class="item-desc">restless machines</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="skills">
+    <div class="center">
+        <h2 class="title"><span>Skills</span></h2>
+    </div>
+</div>
+
+<!-- Include Filterizr -->
+<script src="assets/scripts/jquery.filterizr.js"></script>
+<script src="assets/scripts/controls.js"></script>
 
 <!-- bxSlider Javascript file -->
 <script src="assets/scripts/jquery.bxslider.min.js"></script>

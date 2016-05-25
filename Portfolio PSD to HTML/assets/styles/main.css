@@ -26,6 +26,7 @@ General classes
 .center {
     width: 80%;
     margin: 0 auto;
+    text-align: center;
 }
 
 .center .row {
@@ -367,6 +368,8 @@ div.about-me .row .col-2 h3 {
     font-family: OpenSansLight;
     font-size: 36px;
     padding: 30px 0 50px 0;
+    text-align: left;
+
 }
 
 div.about-me .row .col-2 p {
@@ -443,3 +446,65 @@ Slider
     -webkit-animation-delay: 0s;
     -webkit-animation-iteration-count: infinite;
 }
+
+/***************************
+****************************
+MY WORK
+Filter Gallery Plugin
+****************************
+***************************/
+.my-work{
+    background-color: #cbcbcb;
+    /*padding-top: 60px;*/
+}
+
+.filtr-item {
+    padding: 1rem;
+}
+.item-desc {
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    position: absolute;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem;
+    z-index: 1;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+}
+/* Filter controls */
+.simplefilter li {
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+}
+.simplefilter li {
+    background-color: transparent;
+}
+.simplefilter li.active {
+    background-color:rgba(255,255,255,.3);
+    border: 1px solid #baa695;
+
+}
+.multifilter li {
+    background-color: #4b9eff;
+}
+.multifilter li.active {
+    background-color: #2265b4;
+}
+
+/***************************
+****************************
+Skills
+****************************
+***************************/
+.skills{
+    width: 100%;
+    background: url("../images/skills-bg.png") center no-repeat;
+    background-size: cover;
+    height: 750px;
+}
+

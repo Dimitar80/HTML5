@@ -65,8 +65,12 @@
     .services .center .row div.service:nth-child(odd) {
         margin-right: 0;
     }
-      .mask{
-        width: 76.59vw;
-        height: 76.59vw;
+  .mask{
+    width: 76.59vw;
+    height: 76.59vw;
+  }
+
+    .simplefilter li{
+        display: block;
     }
 }
