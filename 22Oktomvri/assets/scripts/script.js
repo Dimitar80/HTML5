@@ -14,7 +14,7 @@ $(document).ready(function(){
 
     $('a.up-scroll').on('click', function() {
         $.smoothScroll({
-            //scrollElement: $('.scrollme'),
+            // scrollElement: $('.up-scroll'),
             scrollTarget: '#pocetna',
             speed:1000
         });

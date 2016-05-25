@@ -19,7 +19,7 @@
 <body>
 <div class="se-pre-con"></div>
 <div class="bg-img"></div>
-<div class="bg-content">
+<div class="bg-content" id="intro">
     <img src="assets/images/KSh-belo.png" alt="" class="logo-golemo">
     <span class="intro-quote">imagination is the begining of creation</span>
     <!--mouse scroll icon-->
@@ -33,7 +33,7 @@
 </div>
 
 <nav class="menu" id="menu">
-    <a href="" class="btn btn-2">Home</a>
+    <a href="#intro" class="btn btn-2">Home</a>
     <a href="" class="btn btn-2">About me</a>
     <a href="" class="btn btn-2">Services</a>
     <a href="" class="btn"></a> <img src="assets/images/ksh-sivo.png" alt="">
@@ -41,12 +41,8 @@
     <a href="" class="btn btn-2">My work</a>
     <a href="" class="btn btn-2">Skills</a>
     <a href="" class="btn btn-2">Contact me</a>
-
 </nav>
-<!--<nav class="responsive-menu">-->
-    <!--<a href="" class=""><img src="assets/images/ksh-sivo.png" alt=""></a>-->
-    <!--<a href="" class=""> <img src="assets/images/hamburger-icon.png" alt=""></a>-->
-<!--</nav>-->
+
 <div class="about-me" id="about-me">
     <div class="center">
         <h2 class="title"><span>About me</span></h2>
@@ -71,18 +67,27 @@
         <div class="row">
             <div class="service">
                 <img src="assets/images/service1.png" alt="">
-                <div class="mask">Web Development</div>
+                <div class="mask"><h3>Web Development</h3></div>
             </div>
-            <div class="service"><img src="assets/images/service2.png" alt=""></div>
-            <div class="service"><img src="assets/images/service3.png" alt=""></div>
-            <div class="service"><img src="assets/images/service4.png" alt=""></div>
+            <div class="service">
+                <img src="assets/images/service2.png" alt="">
+                <div class="mask"><h3>Web Development</h3></div>
+            </div>
+            <div class="service">
+                <img src="assets/images/service3.png" alt="">
+                <div class="mask"><h3>Web Development</h3></div>
+            </div>
+            <div class="service">
+                <img src="assets/images/service4.png" alt="">
+                <div class="mask"><h3>Web Development</h3></div>
+            </div>
         </div>
     </div>
 </div>
 
 
 <!--SLIDER-->
-<ul class="bxslider">
+<ul class="bxslider" id="quote-slider">
     <li><img src="assets/images/quote1.png" title="" >
         <div class="bx-caption option animated">
             <span>Design is thinking made visual</span>
@@ -108,7 +113,8 @@
 <!-- bxSlider Javascript file -->
 <script src="assets/scripts/jquery.bxslider.min.js"></script>
 <script src="assets/scripts/slider.js"></script>
-
+<script src="assets/scripts/smooth_scroll.js"></script>
+<script src="assets/scripts/global.js"></script>
 </body>
 
 
