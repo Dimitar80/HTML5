@@ -9,6 +9,14 @@
         font-size: 4.81vw;
         left: 7%;
     }
+    .skills{
+        height: auto;
+    }
+    .skills .content div{
+        width: 100%;
+        float: none;
+        display: block;
+    }
 }
 @media(max-width: 768px){
     .btn{
@@ -53,6 +61,11 @@
     h2.title{
         width: 300px;
     }
+
+    .skills .content div span i{
+        padding: 0px 2px;
+    }
+
 }
 
 @media(max-width: 440px){
@@ -72,5 +85,12 @@
 
     .simplefilter li{
         display: block;
+    }
+
+    .skills .content div span{
+        font-size: 18px;
+    }
+    .skills .content div span p{
+        font-size: 22px;
     }
 }

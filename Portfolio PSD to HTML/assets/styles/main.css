@@ -29,13 +29,13 @@ General classes
     text-align: center;
 }
 
-.center .row {
+.center .my-row {
     width: 100%;
     overflow: hidden;
 }
 
-.center .row div.col-1,
-.center .row div.col-2{
+.center .my-row div.col-1,
+.center .my-row div.col-2{
     float: left;
     width: 50%;
 }
@@ -360,11 +360,11 @@ div.about-me {
     background-color: #cbcbcb;
 }
 
-div.about-me .row .col-1 img {
+div.about-me .my-row .col-1 img {
     width: 35.94vw;
 }
 
-div.about-me .row .col-2 h3 {
+div.about-me .my-row .col-2 h3 {
     font-family: OpenSansLight;
     font-size: 36px;
     padding: 30px 0 50px 0;
@@ -372,7 +372,7 @@ div.about-me .row .col-2 h3 {
 
 }
 
-div.about-me .row .col-2 p {
+div.about-me .my-row .col-2 p {
     width: 32.29vw;
     font-size: 28px;
     font-family: OpenSansLight;
@@ -394,7 +394,7 @@ Services
     background-color: #cbcbcb;
 }
 
-.services .center .row div.service {
+.services .center .my-row div.service {
     float: left;
     background-color: #baa695;
     margin-bottom: 3.66vw;
@@ -405,7 +405,7 @@ Services
     transition: all 0.2s linear;
     position: relative;
 }
-    .services .center .row div.service img{
+    .services .center .my-row div.service img{
     left: calc(50% - 48px);
     position: absolute;
     top: calc(50% - 41px);
@@ -427,12 +427,12 @@ Services
         top: 25%;
         font-size: 2.18vw;
     }
-.services .center .row div.service:hover .mask{
+.services .center .my-row div.service:hover .mask{
     display: block;
     background-color: rgba(0,0,0,.8);
 }
 
-.services .center .row div.service:last-child {
+.services .center .my-row div.service:last-child {
     margin-right: 0;
 }
 
@@ -455,7 +455,9 @@ Filter Gallery Plugin
 ***************************/
 .my-work{
     background-color: #cbcbcb;
-    /*padding-top: 60px;*/
+    padding-bottom: 60px;
+    overflow: hidden;
+    /*height: inherit;*/
 }
 
 .filtr-item {
@@ -505,6 +507,63 @@ Skills
     width: 100%;
     background: url("../images/skills-bg.png") center no-repeat;
     background-size: cover;
-    height: 750px;
+    height: inherit;
+}
+.skills h2.title span{
+    background-color: #000000;
+    color: #FFFFFF;
+}
+.skills .content{
+    width: 100%;
+    text-align: left;
+}
+.skills .content div{
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 70px;
+}
+.skills .content div span{
+    display: block;
+}
+.skills .content div span{
+    font-size: 24px;
+    font-family:OpenSansLight;
+    color: rgb(255, 255, 255);
+    line-height: 1.5;
+    padding-bottom: 25px;
+
+}
+.skills .content div span i{
+    float: right;
+    padding: 0px 5px;
+}
+.skills .content div span p{
+    /*float: left;*/
+    display: inline;
+    text-align: left;
+}
+.skills .content div span.question{
+    font-size: 36px;
+    font-family:OpenSansLight;
+    color: #FFFFFF;
+    font-style: italic;
+    text-transform: uppercase;
+    line-height: 1.5;
+    padding-bottom: 60px;
+    text-align: center;
+}
+.skills .content div span.question img{
+    /*width:3.94vw;*/
 }
 
+.contact{
+    background: #b9a695;
+}
+.contact h2.title:before {
+    border-top: 2px solid #ffffff;
+}
+.contact h2.title span{
+    background-color:#b9a695;
+    color: #FFFFFF;
+}
