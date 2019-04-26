@@ -8,6 +8,7 @@ nav.header1{
     height: 70px;
     background-color: #e6e9ee;
     text-align: center;
+    position:relative;
 }
 nav.header1 a.logo{
     margin-right: 40px;
